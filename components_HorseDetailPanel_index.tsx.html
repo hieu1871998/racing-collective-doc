@@ -1,0 +1,543 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RC Documentation components/HorseDetailPanel/index.tsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="styles/style.css">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+             
+                <a class="image" href="index.html">
+                    <img src="public/assets/images/logos/rc-logo-primary.svg" alt="logo">
+                </a>
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Development Documentation</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://gitlab.fruitful.io/prism/prism-buybloodstock-next"
+                        >
+                            Repository
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Interfaces</h3><ul><li><a href="ActionMenuProps.html">ActionMenuProps</a></li><li><a href="AnchorInterface.html">AnchorInterface</a></li><li><a href="CustomizedUploadProps.html">CustomizedUploadProps</a></li><li><a href="EllipsisProps.html">EllipsisProps</a></li><li><a href="EnquiryDetailProps.html">EnquiryDetailProps</a></li><li><a href="HomeBannerCarouselProps.html">HomeBannerCarouselProps</a></li><li><a href="HorseEditFormProps.html">HorseEditFormProps</a></li><li><a href="ItemWrapperStyledProps.html">ItemWrapperStyledProps</a></li><li><a href="ListingType.html">ListingType</a></li><li><a href="ModifiedResultProps.html">ModifiedResultProps</a></li><li><a href="MustReadPanelProps.html">MustReadPanelProps</a></li><li><a href="MustReadPanelSkeletonProps.html">MustReadPanelSkeletonProps</a></li><li><a href="NewsDetailProps.html">NewsDetailProps</a></li><li><a href="NewsDetailWrapperStyleProps.html">NewsDetailWrapperStyleProps</a></li><li><a href="NewsItemProps.html">NewsItemProps</a></li><li><a href="NewsPreviewProps.html">NewsPreviewProps</a></li><li><a href="NewsPreviewStyledProps.html">NewsPreviewStyledProps</a></li><li><a href="NoResultProps.html">NoResultProps</a></li><li><a href="ShareButtonProps.html">ShareButtonProps</a></li><li><a href="ShareMenuProps.html">ShareMenuProps</a></li><li><a href="ShareOnSocialsProps.html">ShareOnSocialsProps</a></li><li><a href="UploadImageProps.html">UploadImageProps</a></li></ul><h3>Components</h3><ul><li><a href="ActionMenu.html">ActionMenu</a></li><li><a href="DrawerHandle.html">DrawerHandle</a></li><li><a href="EnquiryDetail.html">EnquiryDetail</a></li><li><a href="FilterBlock.html">FilterBlock</a></li><li><a href="HomeBannerCarousel.html">HomeBannerCarousel</a></li><li><a href="HorseEditForm.html">HorseEditForm</a></li><li><a href="MustReadPanel.html">MustReadPanel</a></li><li><a href="MustReadPanelSkeleton.html">MustReadPanelSkeleton</a></li><li><a href="NewsDetail.html">NewsDetail</a></li><li><a href="NewsFilter.html">NewsFilter</a></li><li><a href="NewsItem.html">NewsItem</a></li><li><a href="NoResult.html">NoResult</a></li><li><a href="ShareButton.html">ShareButton</a></li><li><a href="ShareMenu.html">ShareMenu</a></li><li><a href="ShareOnSocials.html">ShareOnSocials</a></li><li><a href="SkeletonCard.html">SkeletonCard</a></li><li><a href="TileAdCarousel.html">TileAdCarousel</a></li><li><a href="TileAdItem.html">TileAdItem</a></li><li><a href="UploadFile.html">UploadFile</a></li><li><a href="UploadImage.html">UploadImage</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Empty">Empty</a></li><li><a href="global.html#FieldDropdown">FieldDropdown</a></li><li><a href="global.html#getHorseLink">getHorseLink</a></li><li><a href="global.html#handleCancel">handleCancel</a></li><li><a href="global.html#HOME_BANNERS">HOME_BANNERS</a></li><li><a href="global.html#HomeBannerItem">HomeBannerItem</a></li><li><a href="global.html#HomePage">HomePage</a></li><li><a href="global.html#HorseAges">HorseAges</a></li><li><a href="global.html#HorseDetailPanel">HorseDetailPanel</a></li><li><a href="global.html#InfoPanel">InfoPanel</a></li><li><a href="global.html#ItemWrapper">ItemWrapper</a></li><li><a href="global.html#ListingsTab">ListingsTab</a></li><li><a href="global.html#ProfileTab">ProfileTab</a></li><li><a href="global.html#sellUserHorse">sellUserHorse</a></li><li><a href="global.html#useAutoAnimate">useAutoAnimate</a></li><li><a href="global.html#useForceUpdate">useForceUpdate</a></li><li><a href="global.html#useLoading">useLoading</a></li><li><a href="global.html#ViewLayout">ViewLayout</a></li></ul></div><div class="category"><h2>@api</h2><h3>Global</h3><ul><li><a href="global.html#getHorseColours">getHorseColours</a></li><li><a href="global.html#getListingTypes">getListingTypes</a></li><li><a href="global.html#updateHorseDetail">updateHorseDetail</a></li><li><a href="global.html#useGetHorseColours">useGetHorseColours</a></li><li><a href="global.html#useGetListingTypes">useGetListingTypes</a></li></ul></div><div class="category"><h2>@components</h2><h3>Components</h3><ul><li><a href="CountryEditPanel.html">CountryEditPanel</a></li><li><a href="HorseEditFormModal.html">HorseEditFormModal</a></li><li><a href="InfoEditPanel.html">InfoEditPanel</a></li><li><a href="NewsPreview.html">NewsPreview</a></li></ul></div><div class="category"><h2>@containers</h2><h3>Components</h3><ul><li><a href="Layout.html">Layout</a></li></ul></div><div class="category"><h2>@ui</h2><h3>Components</h3><ul><li><a href="Button.html">Button</a></li><li><a href="Carousel.html">Carousel</a></li><li><a href="Checkbox.html">Checkbox</a></li><li><a href="DatePicker.html">DatePicker</a></li><li><a href="Drawer.html">Drawer</a></li><li><a href="Editor.html">Editor</a></li><li><a href="Ellipsis.html">Ellipsis</a></li><li><a href="Form.html">Form</a></li><li><a href="Input.html">Input</a></li><li><a href="Input.Group.html">Group</a></li><li><a href="Input.Password.html">Password</a></li><li><a href="Input.Search.html">Search</a></li><li><a href="Input.TextArea.html">TextArea</a></li><li><a href="Menu.html">Menu</a></li><li><a href="Modal.html">Modal</a></li><li><a href="Notification.html">Notification</a></li><li><a href="Progress.html">Progress</a></li><li><a href="Radio.html">Radio</a></li><li><a href="RangePicker.html">RangePicker</a></li><li><a href="Result.html">Result</a></li><li><a href="Segmented.html">Segmented</a></li><li><a href="Select.html">Select</a></li><li><a href="Spin.html">Spin</a></li><li><a href="Upload.html">Upload</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>components/HorseDetailPanel/index.tsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { CheckOutlined, EditOutlined, LoadingOutlined, ReloadOutlined } from '@ant-design/icons'
+import styled from '@emotion/styled'
+import { Col, Row, Grid, Divider, Badge, Skeleton, Typography } from 'antd'
+import {
+  HorseAges,
+  ShareOnSocials,
+  getHorseLink,
+  DetailMediaGallery,
+  EnquiryForm,
+  HorseEditFormModal,
+} from '@components'
+import { Horse } from '@interfaces'
+import { Button, Spin } from '@ui'
+import dayjs from 'dayjs'
+import parse, { attributesToProps, domToReact, Element, HTMLReactParserOptions } from 'html-react-parser'
+import { HEADER_TYPE, HorseStatusCodes, HorseStatusColorCodes, HorseStatusColors, HorseStatuses } from '@constants/enum'
+import { useState } from 'react'
+import Image from 'next/future/image'
+import defaultThumbnail from '../../../public/assets/images/logos/thumbnail-primary.svg'
+
+const { Title } = Typography
+
+const { useBreakpoint } = Grid
+
+interface HorseDetailPanelProps {
+  horse: Horse
+  isDetailPage?: boolean
+  relist?: () => void
+  markAsSold?: () => void
+}
+
+/**
+ * Horse detail panel, show all information about current horse.
+ * @prop {Horse} horse
+ * @prop {boolean} isDetailPage
+ */
+export const HorseDetailPanel = ({ horse, isDetailPage, relist, markAsSold }: HorseDetailPanelProps) => {
+  const screens = useBreakpoint()
+
+  const replaceOptions: HTMLReactParserOptions = {
+    replace: (domNode: Element) => {
+      if (domNode.name === 'iframe') {
+        const props = attributesToProps(domNode.attribs)
+        return (
+          &lt;iframe
+            style={{ maxWidth: '100%' }}
+            {...props}
+          >
+            {domToReact(domNode.children)}
+          &lt;/iframe>
+        )
+      }
+      if (domNode.name === 'a') {
+        const props = attributesToProps(domNode.attribs)
+        let address: URL = null
+        if (domToReact(domNode.children)?.toString().includes('http')) {
+          address = new URL(domToReact(domNode.children)?.toString())
+        }
+
+        return (
+          &lt;p className='truncate'>
+            &lt;a
+              className='text-primary-500'
+              {...props}
+            >
+              {/* {props.hostname} */}
+              {domToReact(domNode.children)?.toString().includes('http')
+                ? address?.hostname?.toString()
+                : domToReact(domNode.children)}
+            &lt;/a>
+          &lt;/p>
+        )
+      }
+    },
+  }
+
+  return (
+    &lt;PanelWrapper className={`container mx-auto relative bg-white rounded-sm ${isDetailPage ? 'my-4' : 'before:'}`}>
+      {!isDetailPage &amp;&amp; (
+        &lt;ActionMenu
+          horse={horse}
+          relist={relist}
+          markAsSold={markAsSold}
+        />
+      )}
+      &lt;div className='w-full p-4'>
+        &lt;Row gutter={24}>
+          &lt;Col
+            xl={10}
+            lg={12}
+            span={24}
+          >
+            &lt;div
+              className={`
+                  w-full aspect-w-4 aspect-h-3 bg-gray-200
+                  ${horse ? '' : 'animate-pulse'}
+                `}
+            >
+              {horse ? (
+                &lt;Badge.Ribbon
+                  className={`px-4 py-2 h-auto leading-4
+                      ${isDetailPage ? 'hidden' : 'uppercase'} 
+                      ${horse.status === 1 ? 'animate-pulsing-sm' : ''}
+                    `}
+                  text={horse?.approved ? HorseStatuses.Published : HorseStatusCodes[horse?.status]}
+                  color={horse?.approved ? HorseStatusColors.Green : HorseStatusColorCodes[horse?.status]}
+                >
+                  &lt;Image
+                    id={`${horse?.id}`}
+                    className='w-full h-full object-center object-cover'
+                    src={
+                      horse?.avatar
+                        ? horse?.avatar?.cdnMedium ||
+                          horse?.avatar?.cdnSmall ||
+                          horse?.avatar?.cdnLarge ||
+                          horse?.avatar?.cdnOrigin ||
+                          (horse?.avatar?.url.includes('http') &amp;&amp; horse?.avatar?.url) ||
+                          defaultThumbnail
+                        : defaultThumbnail
+                    }
+                    alt=''
+                    fill={horse?.avatar !== undefined}
+                    sizes='(max-width: 576px) 100vw,
+                            (max-width: 1024px) 75vw,
+                            50vw'
+                  />
+                &lt;/Badge.Ribbon>
+              ) : (
+                &lt;Spin
+                  className='w-full h-full flex justify-center items-center'
+                  size='large'
+                  indicator={&lt;LoadingOutlined />}
+                />
+              )}
+            &lt;/div>
+          &lt;/Col>
+          &lt;Col
+            xl={14}
+            lg={12}
+            span={24}
+          >
+            &lt;Skeleton
+              className='mt-4'
+              loading={!horse}
+              active
+            >
+              &lt;div className='position'>
+                &lt;div className='horse-info max-w-[95%] xl:max-w-[100%]'>
+                  &lt;Title
+                    className='lg:mt-0 mt-4 uppercase'
+                    level={screens.xl ? 2 : 4}
+                  >
+                    {horse?.horseName || horse?.name}
+                    {horse?.nickname ? &lt;span> ({horse?.nickname})&lt;/span> : &lt;>&lt;/>}
+                  &lt;/Title>
+                  &lt;p className='xl:text-sm text-xs'>
+                    {horse?.age > -1 ? (
+                      &lt;strong>
+                        &lt;HorseAges age={horse?.age} />{' '}
+                      &lt;/strong>
+                    ) : (
+                      &lt;>&lt;/>
+                    )}
+                    &lt;b>{horse?.colour &amp;&amp; horse?.colour?.colour + ' '}&lt;/b>
+                    &lt;b>{horse?.sex &amp;&amp; horse?.sex + ' '}&lt;/b>
+                    {(horse?.sire || horse?.dam) &amp;&amp; 'by '}
+                    &lt;b className='uppercase'>{horse?.sire} &lt;/b>
+                    {horse?.sire &amp;&amp; horse?.dam &amp;&amp; 'ex '}
+                    &lt;b className='uppercase'>{horse?.dam} &lt;/b>
+                    {horse?.foaled &amp;&amp; `foaled ${dayjs(horse?.foaled).format('DD/MM/YYYY')}`}
+                  &lt;/p>
+                  &lt;div className='mt-4 xl:text-sm text-xs text-neutral-200'>
+                    &lt;p>
+                      &lt;span>{horse?.countryLocation ? horse?.countryLocation.name : ''}&lt;/span>
+                      {horse?.state || horse?.location ? ' |' : ''} &lt;span>{horse?.state ? horse?.state.name : ''}&lt;/span>{' '}
+                      {horse?.location &amp;&amp; horse?.state ? '|' : ''} &lt;span>{horse?.location}&lt;/span>
+                    &lt;/p>
+                  &lt;/div>
+                  &lt;p className='mt-4 xl:text-sm text-xs'>
+                    {horse?.type?.type} by &lt;b className='text-primary-500'>{horse?.user?.companyName}&lt;/b>
+                  &lt;/p>
+                  &lt;p className='mt-4 text-sm'>
+                    {horse?.trainerName &amp;&amp; horse?.type?.id === HEADER_TYPE.SYNDICATION &amp;&amp; (
+                      &lt;>
+                        To be trained by &lt;b>{horse?.trainerName}&lt;/b>
+                      &lt;/>
+                    )}
+                  &lt;/p>
+                  &lt;p className='horse-price mt-2 2xl:text-2xl xl:text-xl text-lg text-primary-500'>
+                    &lt;b>
+                      {horse?.price
+                        ? horse?.price?.toLocaleString('en-AU', {
+                            style: 'currency',
+                            currency: 'AUD',
+                            minimumFractionDigits: 0,
+                          })
+                        : ''}{' '}
+                      &lt;span className='2xl:text-xl xl:text-lg text-base'>
+                        {horse?.condition ? horse?.condition : ''}
+                      &lt;/span>
+                    &lt;/b>
+                  &lt;/p>
+                  {horse?.bonusScheme &amp;&amp; (
+                    &lt;div
+                      className={`horse-bonuscheme mr-5
+                      flex items-center flex-wrap`}
+                    >
+                      {horse?.bonusScheme.map(bonus =>
+                        bonus.media ? (
+                          &lt;div
+                            key={`${bonus.id}-bonus-key`}
+                            className='bonus-item m-2'
+                            id={`${bonus.id} BonusKey`}
+                          >
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            &lt;img
+                              src={bonus.media.cdnSmall || bonus.media.cdnOrigin}
+                              alt={horse?.horseName || horse?.name}
+                              title={bonus.code}
+                            />
+                          &lt;/div>
+                        ) : (
+                          &lt;span
+                            key={`${bonus.id}-bonus-key`}
+                            className='bonus-item m-2 font-semibold text-white px-2 bg-primary-500'
+                          >
+                            {bonus.code}
+                          &lt;/span>
+                        )
+                      )}
+                    &lt;/div>
+                  )}
+                &lt;/div>
+              &lt;/div>
+              {isDetailPage &amp;&amp; (
+                &lt;div
+                  className={`share-social-network flex
+                  justify-center items-center absolute
+                  top-6 sm:right-1 right-0`}
+                >
+                  &lt;ShareOnSocials
+                    data={horse}
+                    shareUrl={process.env.NEXT_PUBLIC_ROOT_PATH + getHorseLink(horse).as}
+                    type='horse'
+                    title={horse?.horseName || horse?.name}
+                  />
+                &lt;/div>
+              )}
+            &lt;/Skeleton>
+          &lt;/Col>
+        &lt;/Row>
+        &lt;Divider />
+        &lt;Row className='w-full'>
+          {horse ? (
+            &lt;DetailMediaGallery
+              isDetailPage={isDetailPage}
+              images={horse?.imageMedia}
+              videos={horse?.videoMedia}
+              audios={horse?.audioMedia}
+              documents={horse?.documentMedia}
+            />
+          ) : (
+            &lt;Spin
+              className='w-full h-full flex justify-center items-center'
+              size='large'
+              indicator={&lt;LoadingOutlined />}
+            />
+          )}
+        &lt;/Row>
+        &lt;Divider />
+        &lt;Row>
+          &lt;Skeleton
+            loading={!horse}
+            active
+          >
+            {horse?.headline &amp;&amp; &lt;h5 className='font-bold mb-4'>{horse?.headline}&lt;/h5>}
+            &lt;div className='w-full text-sm'>{parse(horse?.description ?? '', replaceOptions)}&lt;/div>
+          &lt;/Skeleton>
+        &lt;/Row>
+        {isDetailPage &amp;&amp; horse &amp;&amp; (
+          &lt;>
+            &lt;Divider />
+            &lt;EnquiryForm
+              horseId={horse?.id}
+              vendorName={horse?.user?.companyName}
+            />
+          &lt;/>
+        )}
+      &lt;/div>
+    &lt;/PanelWrapper>
+  )
+}
+
+const PanelWrapper = styled.div`
+  .horse-bonuscheme {
+    position: relative;
+    margin-top: 20px;
+
+    .bonus-item {
+      display: inline-block;
+      height: 35px;
+      line-height: 35px;
+      img {
+        height: 35px;
+      }
+    }
+  }
+
+  p,
+  figure {
+    margin: 0 0 1em;
+  }
+
+  ul {
+    padding-left: 2.5em;
+
+    li {
+      list-style: disc;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .share-social-network {
+    > div {
+      display: block;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+`
+/**
+ * Action menu props.
+ */
+interface ActionMenuProps {
+  /**Horse detail */
+  horse: Horse
+  /**Relist horse function */
+  relist: () => void
+  /**Mark horse as sold function */
+  markAsSold: () => void
+}
+
+/**
+ * Action menu for user's available horses detail pane.
+ * @component
+ */
+const ActionMenu = ({ horse, relist, markAsSold }: ActionMenuProps) => {
+  const screens = useBreakpoint()
+  const [editFormVisible, setEditFormVisible] = useState(false)
+
+  const onEditClick = (event: React.MouseEvent&lt;HTMLElement, MouseEvent>) => {
+    event.stopPropagation()
+    setEditFormVisible(true)
+  }
+
+  const onFormCancel = () => {
+    setEditFormVisible(false)
+  }
+
+  return (
+    &lt;ActionMenuWrapper className='absolute -top-10 right-0 flex flex-row gap-2 z-40'>
+      {(horse?.status &lt; 1 || horse?.status > 2 || horse?.approved) &amp;&amp; (
+        &lt;Button
+          type='primary'
+          size={screens.xs ? 'small' : 'middle'}
+          icon={HorseStatusCodes[horse?.status] === 'sold' ? &lt;ReloadOutlined /> : &lt;CheckOutlined />}
+          onClick={event => {
+            event.stopPropagation()
+            if (HorseStatusCodes[horse?.status] === 'sold') {
+              relist()
+            } else {
+              markAsSold()
+            }
+          }}
+          loading={!horse}
+        >
+          {horse ? &lt;span>{HorseStatusCodes[horse.status] === 'sold' ? 'RE-LIST' : 'MARK AS SOLD'}&lt;/span> : null}
+        &lt;/Button>
+      )}
+      &lt;Button
+        type='default'
+        size={screens.xs ? 'small' : 'middle'}
+        icon={&lt;EditOutlined />}
+        onClick={onEditClick}
+        loading={!horse}
+      >
+        EDIT
+      &lt;/Button>
+      &lt;HorseEditFormModal
+        horseId={horse?.id}
+        open={editFormVisible}
+        setVisible={setEditFormVisible}
+        onCancel={onFormCancel}
+      />
+    &lt;/ActionMenuWrapper>
+  )
+}
+
+const ActionMenuWrapper = styled.div``
+
+export default HorseDetailPanel
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+
+</body>
+</html>

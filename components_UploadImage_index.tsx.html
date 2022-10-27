@@ -1,0 +1,350 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RC Documentation components/UploadImage/index.tsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="styles/style.css">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+             
+                <a class="image" href="index.html">
+                    <img src="public/assets/images/logos/rc-logo-primary.svg" alt="logo">
+                </a>
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Development Documentation</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://gitlab.fruitful.io/prism/prism-buybloodstock-next"
+                        >
+                            Repository
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Interfaces</h3><ul><li><a href="ActionMenuProps.html">ActionMenuProps</a></li><li><a href="AnchorInterface.html">AnchorInterface</a></li><li><a href="CustomizedUploadProps.html">CustomizedUploadProps</a></li><li><a href="EllipsisProps.html">EllipsisProps</a></li><li><a href="EnquiryDetailProps.html">EnquiryDetailProps</a></li><li><a href="HomeBannerCarouselProps.html">HomeBannerCarouselProps</a></li><li><a href="HorseEditFormProps.html">HorseEditFormProps</a></li><li><a href="ItemWrapperStyledProps.html">ItemWrapperStyledProps</a></li><li><a href="ListingType.html">ListingType</a></li><li><a href="ModifiedResultProps.html">ModifiedResultProps</a></li><li><a href="MustReadPanelProps.html">MustReadPanelProps</a></li><li><a href="MustReadPanelSkeletonProps.html">MustReadPanelSkeletonProps</a></li><li><a href="NewsDetailProps.html">NewsDetailProps</a></li><li><a href="NewsDetailWrapperStyleProps.html">NewsDetailWrapperStyleProps</a></li><li><a href="NewsItemProps.html">NewsItemProps</a></li><li><a href="NewsPreviewProps.html">NewsPreviewProps</a></li><li><a href="NewsPreviewStyledProps.html">NewsPreviewStyledProps</a></li><li><a href="NoResultProps.html">NoResultProps</a></li><li><a href="ShareButtonProps.html">ShareButtonProps</a></li><li><a href="ShareMenuProps.html">ShareMenuProps</a></li><li><a href="ShareOnSocialsProps.html">ShareOnSocialsProps</a></li><li><a href="UploadImageProps.html">UploadImageProps</a></li></ul><h3>Components</h3><ul><li><a href="ActionMenu.html">ActionMenu</a></li><li><a href="DrawerHandle.html">DrawerHandle</a></li><li><a href="EnquiryDetail.html">EnquiryDetail</a></li><li><a href="FilterBlock.html">FilterBlock</a></li><li><a href="HomeBannerCarousel.html">HomeBannerCarousel</a></li><li><a href="HorseEditForm.html">HorseEditForm</a></li><li><a href="MustReadPanel.html">MustReadPanel</a></li><li><a href="MustReadPanelSkeleton.html">MustReadPanelSkeleton</a></li><li><a href="NewsDetail.html">NewsDetail</a></li><li><a href="NewsFilter.html">NewsFilter</a></li><li><a href="NewsItem.html">NewsItem</a></li><li><a href="NoResult.html">NoResult</a></li><li><a href="ShareButton.html">ShareButton</a></li><li><a href="ShareMenu.html">ShareMenu</a></li><li><a href="ShareOnSocials.html">ShareOnSocials</a></li><li><a href="SkeletonCard.html">SkeletonCard</a></li><li><a href="TileAdCarousel.html">TileAdCarousel</a></li><li><a href="TileAdItem.html">TileAdItem</a></li><li><a href="UploadFile.html">UploadFile</a></li><li><a href="UploadImage.html">UploadImage</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Empty">Empty</a></li><li><a href="global.html#FieldDropdown">FieldDropdown</a></li><li><a href="global.html#getHorseLink">getHorseLink</a></li><li><a href="global.html#handleCancel">handleCancel</a></li><li><a href="global.html#HOME_BANNERS">HOME_BANNERS</a></li><li><a href="global.html#HomeBannerItem">HomeBannerItem</a></li><li><a href="global.html#HomePage">HomePage</a></li><li><a href="global.html#HorseAges">HorseAges</a></li><li><a href="global.html#HorseDetailPanel">HorseDetailPanel</a></li><li><a href="global.html#InfoPanel">InfoPanel</a></li><li><a href="global.html#ItemWrapper">ItemWrapper</a></li><li><a href="global.html#ListingsTab">ListingsTab</a></li><li><a href="global.html#ProfileTab">ProfileTab</a></li><li><a href="global.html#sellUserHorse">sellUserHorse</a></li><li><a href="global.html#useAutoAnimate">useAutoAnimate</a></li><li><a href="global.html#useForceUpdate">useForceUpdate</a></li><li><a href="global.html#useLoading">useLoading</a></li><li><a href="global.html#ViewLayout">ViewLayout</a></li></ul></div><div class="category"><h2>@api</h2><h3>Global</h3><ul><li><a href="global.html#getHorseColours">getHorseColours</a></li><li><a href="global.html#getListingTypes">getListingTypes</a></li><li><a href="global.html#updateHorseDetail">updateHorseDetail</a></li><li><a href="global.html#useGetHorseColours">useGetHorseColours</a></li><li><a href="global.html#useGetListingTypes">useGetListingTypes</a></li></ul></div><div class="category"><h2>@components</h2><h3>Components</h3><ul><li><a href="CountryEditPanel.html">CountryEditPanel</a></li><li><a href="HorseEditFormModal.html">HorseEditFormModal</a></li><li><a href="InfoEditPanel.html">InfoEditPanel</a></li><li><a href="NewsPreview.html">NewsPreview</a></li></ul></div><div class="category"><h2>@containers</h2><h3>Components</h3><ul><li><a href="Layout.html">Layout</a></li></ul></div><div class="category"><h2>@ui</h2><h3>Components</h3><ul><li><a href="Button.html">Button</a></li><li><a href="Carousel.html">Carousel</a></li><li><a href="Checkbox.html">Checkbox</a></li><li><a href="DatePicker.html">DatePicker</a></li><li><a href="Drawer.html">Drawer</a></li><li><a href="Editor.html">Editor</a></li><li><a href="Ellipsis.html">Ellipsis</a></li><li><a href="Form.html">Form</a></li><li><a href="Input.html">Input</a></li><li><a href="Input.Group.html">Group</a></li><li><a href="Input.Password.html">Password</a></li><li><a href="Input.Search.html">Search</a></li><li><a href="Input.TextArea.html">TextArea</a></li><li><a href="Menu.html">Menu</a></li><li><a href="Modal.html">Modal</a></li><li><a href="Notification.html">Notification</a></li><li><a href="Progress.html">Progress</a></li><li><a href="Radio.html">Radio</a></li><li><a href="RangePicker.html">RangePicker</a></li><li><a href="Result.html">Result</a></li><li><a href="Segmented.html">Segmented</a></li><li><a href="Select.html">Select</a></li><li><a href="Spin.html">Spin</a></li><li><a href="Upload.html">Upload</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>components/UploadImage/index.tsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**@format */
+import { useUploadMedia } from '@api'
+import { UserContext } from '@contexts'
+import { Media, Session, Shapes } from '@interfaces'
+import { Upload } from '@ui'
+import { UploadProps } from 'antd/lib/upload'
+import React, { useContext, useState } from 'react'
+import { v4 as uuidv4 } from 'uuid'
+import AWS from 'aws-sdk/global'
+import S3 from 'aws-sdk/clients/s3'
+import { map } from 'lodash'
+import { CameraFilled } from '@ant-design/icons'
+import styled from '@emotion/styled'
+import Image from 'next/future/image'
+
+/**UploadImage component props
+ * @alias UploadImageProps
+ * @interface
+ */
+interface UploadImageProps {
+  /**Determine which upload button to show for uploading images */
+  type?: 'regular' | 'avatar'
+  /**Determine the shape of the component */
+  shape?: Shapes
+  /**Set logo id */
+  setLogoId: React.Dispatch&lt;React.SetStateAction&lt;number>>
+  /**Avatar url for displaying current avatar */
+  avatarUrl?: string
+  /**
+   * Ant Design Upload props
+   * @see https://ant.design/components/upload/#API
+   */
+  uploadSettings?: UploadProps
+}
+
+/**
+ * Get uploaded image URL
+ * @alias getUrl
+ * @memberof UploadImage
+ * @param session
+ * @param userId
+ * @param guid
+ * @param fileName
+ * @returns {string} url - URL of the uploaded image
+ */
+const getUrl = (session: Session, userId: number, guid: string, fileName: string): string => {
+  fileName.replace(/[!'()\s]/g, '_')
+
+  const url = `https://${session?.bucket}.s3.${session?.region}.amazonaws.com/bse-upload/image/user/${userId}/${guid}/${fileName}`
+
+  return url
+}
+
+/**
+ * Ant Design Upload component modified for uploading images
+ * @alias UploadImage
+ * @component
+ * @param {UploadImageProps} props
+ */
+export const UploadImage = ({ type, setLogoId, avatarUrl, uploadSettings, shape }: UploadImageProps) => {
+  const userContext = useContext(UserContext)
+  const [loading, setLoading] = useState(false)
+  const [imageUrl, setImageUrl] = useState&lt;string>()
+
+  const { mutateAsync: getSession } = useUploadMedia({
+    onSuccess: resp => {
+      if (resp?.data?.responseData) {
+        return
+      }
+    },
+    onError: error => {
+      console.error(error)
+    },
+  })
+
+  const { mutateAsync: uploadMedia } = useUploadMedia({
+    onSuccess: resp => {
+      const logoIdResp = resp?.data?.responseData?.medias?.[0]?.id
+      if (logoIdResp) {
+        setLogoId(logoIdResp)
+      }
+    },
+    onError: error => {
+      console.error(error)
+    },
+  })
+
+  /**
+   * Custom request for handling file upload to AWS S3
+   * @param {UploadProps['customRequest']} RcCustomRequestOptions
+   */
+  const customRequest: UploadProps['customRequest'] = async ({ file, onProgress, onError, onSuccess }) => {
+    const sessionResp = await getSession({ newToken: true })
+    const session = sessionResp?.data?.responseData?.session
+    AWS.config.credentials = new AWS.Credentials(session.accessKeyId, session.secretAccessKey, session.sessionToken)
+    AWS.config.update({ region: session.region })
+
+    const s3 = new S3()
+    const guid = uuidv4()
+    const userId = userContext.currentUser.id
+    if (file instanceof File) {
+      const imgUrl = getUrl(session, userId, guid, file.name)
+      const tagSet = {
+        guid: guid,
+        creator: userId,
+      }
+      const dirName = `bse-upload/image/user/${userId}`
+
+      const params: S3.Types.PutObjectRequest = {
+        Body: file,
+        Bucket: session.bucket,
+        Key: `${dirName}/${guid}/${file.name}`,
+        ACL: 'public-read',
+        ContentType: file.type,
+        Tagging: map(tagSet, (tag, key) => `${key}=${tag}`).join('&amp;'),
+      }
+
+      s3.putObject(params)
+        .on('httpUploadProgress', ({ loaded, total }) => {
+          setLoading(true)
+          onProgress({ percent: (loaded / total) * 100 })
+        })
+        .send((error, data) => {
+          if (error) {
+            setLoading(false)
+            onError(error, file)
+            console.error(error)
+          } else {
+            setLoading(false)
+            onSuccess(file)
+            setImageUrl(imgUrl)
+          }
+        })
+
+      const fileData: Media = {
+        guid: guid,
+        originalFilename: file.name,
+        typeOfMedia: 1,
+        uploader: userId,
+        url: imgUrl,
+      }
+
+      uploadMedia({ listMetaData: [fileData] })
+    }
+  }
+
+  return (
+    &lt;StyledWrapper>
+      &lt;Upload
+        accept='image/*'
+        listType='picture-card'
+        showUploadList={false}
+        maxCount={1}
+        multiple={false}
+        shape={shape}
+        customRequest={customRequest}
+        {...uploadSettings}
+      >
+        {imageUrl || avatarUrl ? (
+          &lt;>
+            &lt;div className='w-full h-full p-1 relative'>
+              &lt;Image
+                className={`
+                  object-center object-cover
+                  ${shape === 'round' ? 'rounded' : shape === 'circle' ? 'rounded-full' : 'rounded-none'}
+                `}
+                src={imageUrl || avatarUrl}
+                alt='avatar'
+                fill
+                sizes='50vw'
+              />
+            &lt;/div>
+            &lt;div
+              className={`w-full h-full absolute top-0 left-0 opacity-0 hover:opacity-100
+                  bg-black bg-opacity-25 flex justify-center items-center
+                  text-3xl text-white
+                  ${shape === 'circle' ? 'rounded-full' : 'rounded-none'}`}
+            >
+              &lt;CameraFilled />
+            &lt;/div>
+          &lt;/>
+        ) : type === 'avatar' ? (
+          &lt;Upload.AvatarUploadButton isLoading={loading} />
+        ) : (
+          &lt;Upload.UploadButton isLoading={loading} />
+        )}
+      &lt;/Upload>
+    &lt;/StyledWrapper>
+  )
+}
+
+const StyledWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+
+  .ant-upload-picture-card-wrapper {
+    height: 100%;
+
+    .ant-upload {
+      &amp;.ant-upload-select {
+        &amp;.ant-upload-select-picture-card {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+`
+
+export default UploadImage
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+
+</body>
+</html>

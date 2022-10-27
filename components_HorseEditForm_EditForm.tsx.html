@@ -1,0 +1,1550 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RC Documentation components/HorseEditForm/EditForm.tsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="styles/style.css">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+             
+                <a class="image" href="index.html">
+                    <img src="public/assets/images/logos/rc-logo-primary.svg" alt="logo">
+                </a>
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Development Documentation</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://gitlab.fruitful.io/prism/prism-buybloodstock-next"
+                        >
+                            Repository
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Interfaces</h3><ul><li><a href="ActionMenuProps.html">ActionMenuProps</a></li><li><a href="AnchorInterface.html">AnchorInterface</a></li><li><a href="CustomizedUploadProps.html">CustomizedUploadProps</a></li><li><a href="EllipsisProps.html">EllipsisProps</a></li><li><a href="EnquiryDetailProps.html">EnquiryDetailProps</a></li><li><a href="HomeBannerCarouselProps.html">HomeBannerCarouselProps</a></li><li><a href="HorseEditFormProps.html">HorseEditFormProps</a></li><li><a href="ItemWrapperStyledProps.html">ItemWrapperStyledProps</a></li><li><a href="ListingType.html">ListingType</a></li><li><a href="ModifiedResultProps.html">ModifiedResultProps</a></li><li><a href="MustReadPanelProps.html">MustReadPanelProps</a></li><li><a href="MustReadPanelSkeletonProps.html">MustReadPanelSkeletonProps</a></li><li><a href="NewsDetailProps.html">NewsDetailProps</a></li><li><a href="NewsDetailWrapperStyleProps.html">NewsDetailWrapperStyleProps</a></li><li><a href="NewsItemProps.html">NewsItemProps</a></li><li><a href="NewsPreviewProps.html">NewsPreviewProps</a></li><li><a href="NewsPreviewStyledProps.html">NewsPreviewStyledProps</a></li><li><a href="NoResultProps.html">NoResultProps</a></li><li><a href="ShareButtonProps.html">ShareButtonProps</a></li><li><a href="ShareMenuProps.html">ShareMenuProps</a></li><li><a href="ShareOnSocialsProps.html">ShareOnSocialsProps</a></li><li><a href="UploadImageProps.html">UploadImageProps</a></li></ul><h3>Components</h3><ul><li><a href="ActionMenu.html">ActionMenu</a></li><li><a href="DrawerHandle.html">DrawerHandle</a></li><li><a href="EnquiryDetail.html">EnquiryDetail</a></li><li><a href="FilterBlock.html">FilterBlock</a></li><li><a href="HomeBannerCarousel.html">HomeBannerCarousel</a></li><li><a href="HorseEditForm.html">HorseEditForm</a></li><li><a href="MustReadPanel.html">MustReadPanel</a></li><li><a href="MustReadPanelSkeleton.html">MustReadPanelSkeleton</a></li><li><a href="NewsDetail.html">NewsDetail</a></li><li><a href="NewsFilter.html">NewsFilter</a></li><li><a href="NewsItem.html">NewsItem</a></li><li><a href="NoResult.html">NoResult</a></li><li><a href="ShareButton.html">ShareButton</a></li><li><a href="ShareMenu.html">ShareMenu</a></li><li><a href="ShareOnSocials.html">ShareOnSocials</a></li><li><a href="SkeletonCard.html">SkeletonCard</a></li><li><a href="TileAdCarousel.html">TileAdCarousel</a></li><li><a href="TileAdItem.html">TileAdItem</a></li><li><a href="UploadFile.html">UploadFile</a></li><li><a href="UploadImage.html">UploadImage</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Empty">Empty</a></li><li><a href="global.html#FieldDropdown">FieldDropdown</a></li><li><a href="global.html#getHorseLink">getHorseLink</a></li><li><a href="global.html#handleCancel">handleCancel</a></li><li><a href="global.html#HOME_BANNERS">HOME_BANNERS</a></li><li><a href="global.html#HomeBannerItem">HomeBannerItem</a></li><li><a href="global.html#HomePage">HomePage</a></li><li><a href="global.html#HorseAges">HorseAges</a></li><li><a href="global.html#HorseDetailPanel">HorseDetailPanel</a></li><li><a href="global.html#InfoPanel">InfoPanel</a></li><li><a href="global.html#ItemWrapper">ItemWrapper</a></li><li><a href="global.html#ListingsTab">ListingsTab</a></li><li><a href="global.html#ProfileTab">ProfileTab</a></li><li><a href="global.html#sellUserHorse">sellUserHorse</a></li><li><a href="global.html#useAutoAnimate">useAutoAnimate</a></li><li><a href="global.html#useForceUpdate">useForceUpdate</a></li><li><a href="global.html#useLoading">useLoading</a></li><li><a href="global.html#ViewLayout">ViewLayout</a></li></ul></div><div class="category"><h2>@api</h2><h3>Global</h3><ul><li><a href="global.html#getHorseColours">getHorseColours</a></li><li><a href="global.html#getListingTypes">getListingTypes</a></li><li><a href="global.html#updateHorseDetail">updateHorseDetail</a></li><li><a href="global.html#useGetHorseColours">useGetHorseColours</a></li><li><a href="global.html#useGetListingTypes">useGetListingTypes</a></li></ul></div><div class="category"><h2>@components</h2><h3>Components</h3><ul><li><a href="CountryEditPanel.html">CountryEditPanel</a></li><li><a href="HorseEditFormModal.html">HorseEditFormModal</a></li><li><a href="InfoEditPanel.html">InfoEditPanel</a></li><li><a href="NewsPreview.html">NewsPreview</a></li></ul></div><div class="category"><h2>@containers</h2><h3>Components</h3><ul><li><a href="Layout.html">Layout</a></li></ul></div><div class="category"><h2>@ui</h2><h3>Components</h3><ul><li><a href="Button.html">Button</a></li><li><a href="Carousel.html">Carousel</a></li><li><a href="Checkbox.html">Checkbox</a></li><li><a href="DatePicker.html">DatePicker</a></li><li><a href="Drawer.html">Drawer</a></li><li><a href="Editor.html">Editor</a></li><li><a href="Ellipsis.html">Ellipsis</a></li><li><a href="Form.html">Form</a></li><li><a href="Input.html">Input</a></li><li><a href="Input.Group.html">Group</a></li><li><a href="Input.Password.html">Password</a></li><li><a href="Input.Search.html">Search</a></li><li><a href="Input.TextArea.html">TextArea</a></li><li><a href="Menu.html">Menu</a></li><li><a href="Modal.html">Modal</a></li><li><a href="Notification.html">Notification</a></li><li><a href="Progress.html">Progress</a></li><li><a href="Radio.html">Radio</a></li><li><a href="RangePicker.html">RangePicker</a></li><li><a href="Result.html">Result</a></li><li><a href="Segmented.html">Segmented</a></li><li><a href="Select.html">Select</a></li><li><a href="Spin.html">Spin</a></li><li><a href="Upload.html">Upload</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>components/HorseEditForm/EditForm.tsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { ExclamationCircleFilled, PlayCircleFilled } from '@ant-design/icons'
+import { CustomLightbox, FieldDropdown, LightboxDataType, UploadFile } from '@components'
+import { HorseCategories, HorseStatusNumerics, ListingTypes, Messages } from '@constants'
+import { UserContext } from '@contexts'
+import styled from '@emotion/styled'
+import { useAutoAnimate } from '@formkit/auto-animate/react'
+import { Horse, Media, OptionType, PedigreeMedia, SearchSelectField, VideoMedia } from '@interfaces'
+import { generateVideoThumbnails } from '@rajesh896/video-thumbnails-generator'
+import { Editor as TinyMCEEditor } from '@tinymce/tinymce-react'
+import { Button, Checkbox, Editor, Form, Radio } from '@ui'
+import Input from '@ui/input'
+import { Col, FormInstance, Grid, Row, Space, Tooltip } from 'antd'
+import type { UploadFile as UploadFileType } from 'antd/es/upload/interface'
+import { CarouselRef } from 'antd/lib/carousel'
+import { RcFile, UploadProps } from 'antd/lib/upload'
+import { UploadFileStatus } from 'antd/lib/upload/interface'
+import dayjs from 'dayjs'
+import { first, omit } from 'lodash'
+import React, { useContext, useEffect, useMemo, useRef, useState } from 'react'
+import { useFullScreenHandle } from 'react-full-screen'
+
+const { useBreakpoint } = Grid
+
+const formName = 'horseEdit'
+
+/**HorseEditForm component props
+ * @alias HorseEditFormProps
+ * @memberof HorseEditForm
+ */
+interface HorseEditFormProps {
+  /**Form instance */
+  form: FormInstance
+  /**On form submit event. */
+  onFinish: (data: Horse) => void
+  /**Set form modal visibility */
+  setVisible: React.Dispatch&lt;React.SetStateAction&lt;boolean>>
+  /**Horse detail */
+  horse: Horse
+  /**Bonus schemes */
+  bonuses?: OptionType[]
+  categories?: OptionType[]
+  colours?: OptionType[]
+  countries?: OptionType[]
+  countriesExist?: OptionType[]
+  sexes?: OptionType[]
+  states?: OptionType[]
+  types?: OptionType[]
+}
+
+const getBase64 = (file: RcFile): Promise&lt;string> => {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader()
+    reader.readAsDataURL(file)
+    reader.onload = () => resolve(reader.result as string)
+    reader.onerror = error => reject(error)
+  })
+}
+
+/**
+ * HorseEditForm component for displaying and editing horse details.
+ * @alias HorseEditForm
+ * @author Vi Hieu
+ * @component
+ * @param {HorseEditFormProps} HorseEditFormProps - HorseEditForm component props.
+ * @returns {JSX.Element} &lt;HorseEditForm {...props} />
+ * @example
+ * const [form] = Form.useForm()
+ * const horse = horse
+ * const bonuses = bonuses
+ * const categories = categories
+ * const colours = colours
+ * return (
+ *  &lt;HorseEditForm
+ *    form={form}
+ *    horse={horse}
+ *    bonuses={bonuses}
+ *    categories={categories}
+ *    colours={colours}
+ *    {...props}
+ *  />
+ * )
+ */
+export const HorseEditForm = ({
+  form,
+  onFinish,
+  setVisible,
+  horse,
+  bonuses,
+  categories,
+  colours,
+  countries,
+  countriesExist,
+  sexes,
+  states,
+  types,
+}: HorseEditFormProps): JSX.Element => {
+  const screens = useBreakpoint()
+  const [lightboxController, setLightboxController] = useState({
+    toggler: false,
+    sourceIndex: 0,
+  })
+  const [pedigreeController, setPedigreeController] = useState({
+    toggler: false,
+    sourceIndex: 0,
+  })
+  const mediaHandle = useFullScreenHandle()
+  const pedigreeHandle = useFullScreenHandle()
+  const [playing, setPlaying] = useState(false)
+  const sliderRef = useRef&lt;CarouselRef>(null)
+  const animatedRef = useAutoAnimate(null) as React.Ref&lt;HTMLDivElement>
+  const currentCategory = Form.useWatch&lt;number>('categoryId', form)
+  const currentCountryLocation = Form.useWatch&lt;number>('countryLocationId', form)
+  const currentType = Form.useWatch&lt;number>('type', form)
+  const currentInFoal = Form.useWatch&lt;number>('inFoal', form)
+  const currentFoalAtFoot = Form.useWatch&lt;number>('foalAtFoot', form)
+  const userContext = useContext(UserContext)
+  const user = useMemo(() => userContext?.currentUser, [userContext?.currentUser])
+  const avatarMediaId = Form.useWatch&lt;number>('avatarMediaId', form)
+  const editorRef = useRef&lt;TinyMCEEditor['editor'] | null>(null)
+
+  const [pdsFileList, setPdsFileList] = useState&lt;UploadFileType&lt;Media>[]>(
+    horse?.pdsApprovalLetterMedia
+      ? [
+          {
+            uid: horse?.pdsApprovalLetterMedia?.id?.toString(),
+            name: horse?.pdsApprovalLetterMedia?.originalFilename,
+            url:
+              horse?.pdsApprovalLetterMedia?.cdnOrigin ??
+              horse?.pdsApprovalLetterMedia?.cdnLarge ??
+              horse?.pdsApprovalLetterMedia?.cdnMedium ??
+              horse?.pdsApprovalLetterMedia?.cdnSmall ??
+              horse?.pdsApprovalLetterMedia?.url,
+            thumbUrl:
+              horse?.pdsApprovalLetterMedia?.cdnSmall ??
+              horse?.pdsApprovalLetterMedia?.cdnMedium ??
+              horse?.pdsApprovalLetterMedia?.cdnLarge ??
+              horse?.pdsApprovalLetterMedia?.cdnOrigin ??
+              horse?.pdsApprovalLetterMedia?.url ??
+              '/assets/images/horses/pedigree.png',
+            type: 'image',
+            status: 'done',
+          },
+        ]
+      : undefined
+  )
+
+  const [raceRecordFileList, setRaceRecordFileList] = useState&lt;UploadFileType&lt;Media>[]>(
+    horse?.raceRecordMedia
+      ? [
+          {
+            uid: horse?.raceRecordMedia?.id?.toString(),
+            name: horse?.raceRecordMedia?.originalFilename,
+            url:
+              horse?.raceRecordMedia?.cdnOrigin ??
+              horse?.raceRecordMedia?.cdnLarge ??
+              horse?.raceRecordMedia?.cdnMedium ??
+              horse?.raceRecordMedia?.cdnSmall ??
+              horse?.raceRecordMedia?.url,
+            thumbUrl:
+              horse?.raceRecordMedia?.cdnSmall ??
+              horse?.raceRecordMedia?.cdnMedium ??
+              horse?.raceRecordMedia?.cdnLarge ??
+              horse?.raceRecordMedia?.cdnOrigin ??
+              horse?.raceRecordMedia?.url ??
+              '/assets/images/horses/pedigree.png',
+            type: 'image',
+            status: 'done',
+          },
+        ]
+      : undefined
+  )
+
+  const [mediaFileList, setMediaFiles] = useState&lt;UploadFileType[]>(() => {
+    const imageMedias = horse?.imageMedia?.map(
+      image =>
+        ({
+          uid: image?.id.toString(),
+          name: image?.filename ?? image?.originalFilename,
+          fileName: image?.filename ?? image?.originalFilename,
+          url: image?.cdnOrigin ?? image?.cdnLarge ?? image?.cdnMedium ?? image?.cdnSmall ?? image?.url,
+          thumbUrl: image?.cdnSmall ?? image?.cdnMedium ?? image?.cdnLarge ?? image?.cdnOrigin ?? image?.url,
+          type: 'image',
+          status: 'done' as UploadFileStatus,
+        } as UploadFileType)
+    )
+    const videoMedias = horse?.videoMedia?.map(video => ({
+        uid: video?.id?.toString(),
+        name: video?.originalFilename,
+        fileName: video?.originalFilename,
+        url: video?.external ? video?.url : video?.cdnOrigin ?? video?.url,
+        thumbUrl: video?.thumbnail,
+        type: 'video',
+        status: 'done' as UploadFileStatus,
+      } as UploadFileType))
+    const audioMedias = horse?.audioMedia?.map(audio => ({
+      uid: audio?.id?.toString(),
+      name: audio?.originalFilename,
+      fileName: audio?.originalFilename,
+      url: audio?.external ? audio?.url : audio?.cdnOrigin ?? audio?.url,
+      type: 'audio',
+      status: 'done' as UploadFileStatus,
+    }))
+    const documentMedias = horse?.documentMedia?.map(document => ({
+      uid: document?.id?.toString(),
+      name: document?.originalFilename,
+      fileName: document?.originalFilename,
+      url: document?.contentType === 'application/pdf' ? document?.cdnOrigin : document?.url,
+      thumbUrl: '/assets/images/horses/pedigree.png',
+      type: 'document',
+      status: 'done' as UploadFileStatus,
+    }))
+
+    const fileList = [...(imageMedias ?? []), ...(videoMedias ?? []), ...(audioMedias ?? []), ...(documentMedias ?? [])]
+
+    return fileList
+  })
+
+  const [pedigreeFileList, setPedigreeFileList] = useState&lt;UploadFileType&lt;PedigreeMedia>[]>(
+    horse?.pedigreeMedia
+      ? [
+          {
+            uid: horse?.pedigreeMedia?.id?.toString(),
+            name: horse?.pedigreeMedia?.originalFilename,
+            url:
+              horse?.pedigreeMedia?.cdnOrigin ??
+              horse?.pedigreeMedia?.cdnLarge ??
+              horse?.pedigreeMedia?.cdnMedium ??
+              horse?.pedigreeMedia?.cdnSmall ??
+              horse?.pedigreeMedia?.url,
+            thumbUrl:
+              horse?.pedigreeMedia?.cdnSmall ??
+              horse?.pedigreeMedia?.cdnMedium ??
+              horse?.pedigreeMedia?.cdnLarge ??
+              horse?.pedigreeMedia?.cdnOrigin ??
+              horse?.pedigreeMedia?.url ??
+              '/assets/images/horses/pedigree.png',
+            type: 'document',
+          },
+        ]
+      : undefined
+  )
+
+  const previews = useMemo&lt;LightboxDataType[]>(
+    () =>
+      mediaFileList?.map(file => {
+        if (file.type.includes('image')) {
+          return {
+            url: file?.url,
+            type: 'image',
+          }
+        } else if (file.type.includes('video') || file.type.includes('media')) {
+          return {
+            url: file?.url,
+            type: 'media',
+          }
+        } else if (file.type.includes('audio') || file.type.includes('media')) {
+          return {
+            url: file?.url,
+            type: 'media',
+            isAudio: true,
+          }
+        } else if (file.type.includes('application') || file.type.includes('document')) {
+          return {
+            url: file?.url,
+            type: 'document',
+            originalFilename: file?.originFileObj?.name ?? file?.fileName ?? file?.name,
+            contentType: file?.originFileObj?.type ?? file?.type,
+          }
+        }
+      }),
+    [mediaFileList]
+  )
+
+  const pedigreePreview = useMemo&lt;LightboxDataType[]>(
+    () => [
+      {
+        url: pedigreeFileList?.[0]?.url,
+        type: 'image',
+      },
+    ],
+    [pedigreeFileList]
+  )
+
+  const handleCancel = () => {
+    setLightboxController(values => ({
+      ...values,
+      toggler: false,
+    }))
+    setPlaying(false)
+  }
+
+  const handlePedigreeCancel = () => {
+    setPedigreeController(values => ({
+      ...values,
+      toggler: false
+    }))
+    setPlaying(false)
+  }
+
+  const handleMediaPreview = async (file: UploadFileType) => {
+    if (!file.url &amp;&amp; !file.preview) {
+      file.url = await getBase64(file.originFileObj)
+    }
+
+    setLightboxController({
+      sourceIndex: mediaFileList.findIndex(media => media.uid === file.uid),
+      toggler: true,
+    })
+  }
+
+  const handlePedigreePreview = async (file: UploadFileType) => {
+    if (!file.url &amp;&amp; !file.preview) {
+      file.url = await getBase64(file.originFileObj)
+    }
+
+    setPedigreeController({
+      sourceIndex: pedigreeFileList.findIndex(media => media.uid === file.uid),
+      toggler: true,
+    })
+  }
+
+  useEffect(() => {
+    if (horse) {
+      form.setFieldsValue({
+        ...horse,
+        bonusSchemeIds: horse?.bonusScheme?.map(bonus => bonus.id),
+        categoryId: horse?.category?.id,
+        colourId: horse?.colour?.id,
+        countryId: horse?.countryOfBirth?.id,
+        countryLocationId: horse?.countryLocation?.id,
+        foaled: dayjs(horse?.foaled),
+        price: horse?.price?.toLocaleString('en-AU'),
+        type: horse?.type?.id,
+        stateId: horse?.state?.id,
+        pdsExpiryDate: dayjs(horse?.pdsExpiryDate),
+        avatarMediaId: horse?.avatar?.id?.toString(),
+      })
+    }
+  }, [horse, form])
+
+  useEffect(
+    () => {
+      if (mediaFileList?.filter(file => file.type.includes('image')).length === 0) {
+        form.setFieldValue('avatarMediaId', undefined)
+      }
+    },
+    [mediaFileList, form]
+  )
+
+  const bonusField: SearchSelectField = {
+    name: 'bonusSchemeIds',
+    label: 'Bonus scheme(s)',
+    placeholder: 'Choose bonus scheme(s)',
+    options: bonuses,
+    mode: 'multiple',
+    labelInValue: true,
+  }
+
+  const categoryField: SearchSelectField = {
+    name: 'categoryId',
+    label: 'Bloodstock category',
+    placeholder: 'Choose category',
+    options: categories,
+    rules: [{
+      required: true,
+    }],
+    tooltip: {
+      title: 'Required field',
+      icon: (
+        &lt;span>
+          &lt;span className='text-red-500'>*&lt;/span>
+        &lt;/span>
+      ),
+    }
+  }
+
+  const colourField: SearchSelectField = {
+    name: 'colourId',
+    label: 'Colour',
+    placeholder: 'Choose colour',
+    options: colours,
+  }
+
+  const countryOfBirthField: SearchSelectField = {
+    name: 'countryId',
+    label: 'Country of birth',
+    placeholder: 'Choose country of birth',
+    options: countries,
+    showSearch: true,
+    filterOption: (input, option) => (option.children as unknown as string).toLowerCase().includes(input.toLowerCase()),
+  }
+
+  const countryLocationField: SearchSelectField = {
+    name: 'countryLocationId',
+    placeholder: 'Choose country',
+    options: countries,
+    showSearch: true,
+    filterOption: (input, option) => (option.children as unknown as string).toLowerCase().includes(input.toLowerCase()),
+    onChange: value => form.resetFields(['stateId']),
+  }
+
+  const foaledDateField: SearchSelectField = {
+    name: 'foaled',
+    label: 'Foaled date',
+    placeholder: 'Choose foaled date',
+    isDatePicker: true,
+  }
+
+  const listingField: SearchSelectField = {
+    name: 'type',
+    label: 'Listing type',
+    placeholder: 'Choose listing type',
+    options: types,
+    rules: [{
+      required: true,
+      message: Messages.RequiredField
+    }],
+    tooltip: {
+      title: 'Required field',
+      icon: (
+        &lt;span>
+          &lt;span className='text-red-500'>*&lt;/span>
+        &lt;/span>
+      ),
+    }
+  }
+
+  const sexField: SearchSelectField = {
+    name: 'sex',
+    label: 'Sex',
+    placeholder: 'Choose sex',
+    options: sexes,
+  }
+
+  const stateField: SearchSelectField = {
+    name: 'stateId',
+    options: states,
+    placeholder: 'Choose state',
+    showSearch: true,
+    disabled: !currentCountryLocation,
+    filterOption: (input, option) => (option.children as unknown as string).toLowerCase().includes(input.toLowerCase()),
+  }
+
+  const xRayedField: SearchSelectField = {
+    name: 'x_Rayed',
+    label: 'X-rayed',
+    placeholder: 'Choose x-rayed',
+    options: [
+      {
+        value: false,
+        label: 'No',
+      },
+      {
+        value: true,
+        label: 'Yes',
+      },
+    ],
+    rules: [{
+      required: currentType === ListingTypes.ForSyndication,
+    }],
+    tooltip: (currentType === ListingTypes.ForSyndication) &amp;&amp; ({
+      title: 'Required field',
+      icon: (
+        &lt;span>
+          &lt;span className='text-red-500'>*&lt;/span>
+        &lt;/span>
+      ),
+    })
+  }
+
+  const scopedField: SearchSelectField = {
+    name: 'scoped',
+    label: 'Scoped',
+    placeholder: 'Choose scoped',
+    options: [
+      {
+        value: false,
+        label: 'No',
+      },
+      {
+        value: true,
+        label: 'Yes',
+      },
+    ],
+    rules: [{
+      required: currentType === ListingTypes.ForSyndication,
+    }],
+    tooltip: (currentType === ListingTypes.ForSyndication) &amp;&amp; ({
+      title: 'Required field',
+      icon: (
+        &lt;span>
+          &lt;span className='text-red-500'>*&lt;/span>
+        &lt;/span>
+      ),
+    })
+  }
+
+  const breedingCertField: SearchSelectField = {
+    name: 'breedingCertificate',
+    label: 'Breeding Certificate',
+    placeholder: 'Choose scoped',
+    options: [
+      {
+        value: false,
+        label: 'No',
+      },
+      {
+        value: true,
+        label: 'Yes',
+      },
+    ],
+  }
+
+  const inFoalField: SearchSelectField = {
+    name: 'inFoal',
+    label: 'In foal',
+    placeholder: 'Choose in foal',
+    options: [
+      {
+        value: false,
+        label: 'No',
+      },
+      {
+        value: true,
+        label: 'Yes',
+      },
+    ],
+    rules: [{
+      required: true,
+    }],
+    tooltip: {
+      title: 'Required field',
+      icon: (
+        &lt;span>
+          &lt;span className='text-red-500'>*&lt;/span>
+        &lt;/span>
+      ),
+    }
+  }
+
+  const foalAtFootField: SearchSelectField = {
+    name: 'foalAtFoot',
+    label: 'Foal at foot',
+    placeholder: 'Choose foal at foot',
+    options: [
+      {
+        value: false,
+        label: 'No',
+      },
+      {
+        value: true,
+        label: 'Yes',
+      },
+    ],
+    rules: [{
+      required: true,
+    }],
+    tooltip: {
+      title: 'Required field',
+      icon: (
+        &lt;span>
+          &lt;span className='text-red-500'>*&lt;/span>
+        &lt;/span>
+      ),
+    }
+  }
+
+  const pdsExpiryDateField: SearchSelectField = {
+    name: 'pdsExpiryDate',
+    label: 'PDS expiry date',
+    isDatePicker: true,
+    disabledDate: currentDate => currentDate &lt; dayjs(),
+    rules: [{
+      required: true,
+    }],
+    tooltip: {
+      title: 'Required field',
+      icon: (
+        &lt;span>
+          &lt;span className='text-red-500'>*&lt;/span>
+        &lt;/span>
+      ),
+    },
+    initialValue: horse?.pdsExpiryDate ? dayjs(horse?.pdsExpiryDate) : undefined
+  }
+
+  const onPdsFileChange: UploadProps['onChange'] = info => {
+    let newFileList = [...info.fileList]
+
+    newFileList = newFileList.map(file => {
+      const resp = file?.response as Media
+
+      if (resp) {
+        file.uid = resp.id.toString()
+        file.url = resp.url
+        file.preview = resp.url
+        file.thumbUrl = '/assets/images/horses/pedigree.png'
+      }
+
+      return file
+    })
+
+    setPdsFileList(newFileList)
+  }
+
+  const onRaceRecordFileChange: UploadProps['onChange'] = info => {
+    let newFileList = [...info.fileList]
+
+    newFileList = newFileList.map(file => {
+      const resp = file?.response as Media
+
+      if (resp) {
+        file.uid = resp.id.toString()
+        file.url = resp.url
+        file.preview = resp.url
+        file.thumbUrl = '/assets/images/horses/pedigree.png'
+      }
+
+      return file
+    })
+
+    setRaceRecordFileList(newFileList)
+  }
+
+  const onMediaFileChange: UploadProps['onChange'] = async ({ fileList }) => {
+    let newFileList = [...fileList]
+
+    newFileList = await Promise.all(
+      newFileList.map(async file => {
+        const resp = file?.response as VideoMedia
+
+        if (resp) {
+          if (file.type.includes('video')) {
+            await generateVideoThumbnails(file.originFileObj, 1, 'file')
+              .then(resp => {
+                file.thumbUrl = resp[0]
+              })
+              .catch(error => console.error(error))
+          } else if (file.type.includes('document')) {
+            file.thumbUrl = '/assets/images/horses/pedigree.png'
+          }
+          file.uid = resp.id.toString()
+          file.url = resp.url
+          file.preview = resp.url
+
+          if (!avatarMediaId) {
+            form.setFieldValue('avatarMediaId', resp.id.toString())
+          }
+        }
+
+        return file
+      })
+    )
+
+    setMediaFiles(newFileList)
+  }
+
+  const onPedigreeFileChange: UploadProps['onChange'] = ({ fileList }) => {
+    let newFileList = [...fileList]
+
+    newFileList = newFileList.map(file => {
+      const resp = file?.response as PedigreeMedia
+
+      if (resp) {
+        file.uid = resp.id.toString()
+        file.url = resp.url
+        file.preview = resp.url
+      }
+
+      return file
+    })
+
+    setPedigreeFileList(newFileList)
+  }
+
+  const onSubmit = (event: React.MouseEvent&lt;HTMLButtonElement, MouseEvent>) => {
+    event.stopPropagation()
+    const data = form.getFieldsValue() as Horse
+    data.pdsApprovalLetterMediaId = parseInt(pdsFileList?.[0]?.uid)
+    data.raceRecordMediaId = parseInt(raceRecordFileList?.[0]?.uid)
+    data.mediaIds = mediaFileList?.map(file => parseInt(file?.uid))
+    data.pedigreeMediaId = parseInt(pedigreeFileList?.[0]?.uid)
+    data.description = editorRef.current.getContent()
+    onFinish({
+      ...data,
+      status: 1
+    })
+  }
+
+  const onWithdraw = (event: React.MouseEvent&lt;HTMLButtonElement, MouseEvent>) => {
+    event.stopPropagation()
+    const data = form.getFieldsValue() as Horse
+    data.pdsApprovalLetterMediaId = parseInt(pdsFileList?.[0]?.uid)
+    data.raceRecordMediaId = parseInt(raceRecordFileList?.[0]?.uid)
+    data.mediaIds = mediaFileList?.map(file => parseInt(file?.uid))
+    data.pedigreeMediaId = parseInt(pedigreeFileList?.[0]?.uid)
+    data.description = editorRef.current.getContent()
+    onFinish({
+      ...data,
+      status: 2,
+      approved: false
+    })
+  }
+
+  return (
+    &lt;HorseEditFormWrapper>
+      &lt;Form
+        name={formName}
+        form={form}
+        layout='vertical'
+        size='large'
+        validateMessages={{
+          required: Messages?.RequiredField,
+        }}
+        initialValues={omit(horse, ['foaled', 'pdsExpiryDate'])}
+        onFinish={(data: Horse) => {
+          data.pdsApprovalLetterMediaId = parseInt(pdsFileList?.[0]?.uid)
+          data.raceRecordMediaId = parseInt(raceRecordFileList?.[0]?.uid)
+          data.mediaIds = mediaFileList?.map(file => parseInt(file?.uid))
+          data.pedigreeMediaId = parseInt(pedigreeFileList?.[0]?.uid)
+          data.description = editorRef.current.getContent()
+          onFinish(data)
+        }}
+        requiredMark={false}
+        preserve={false}
+        scrollToFirstError
+      >
+        &lt;Row
+          ref={animatedRef}
+          gutter={16}
+        >
+          &lt;Col
+            sm={8}
+            span={24}
+          >
+            &lt;Form.Item
+              name='name'
+              label='Horse name'
+              rules={[
+                {
+                  required: true,
+                  message: Messages.RequiredField,
+                },
+              ]}
+              tooltip={{
+                icon: (
+                  &lt;Space>
+                    &lt;Tooltip title='Required field'>
+                      &lt;span className='text-red-500'>*&lt;/span>
+                    &lt;/Tooltip>
+                    {horse?.expiredHorse &amp;&amp; (
+                      &lt;Tooltip title='This horse listing has been expired. Please update it.'>
+                        &lt;span className='text-red-500 text-base'>&lt;ExclamationCircleFilled />&lt;/span>
+                      &lt;/Tooltip>
+                    )}
+                  &lt;/Space>
+                ),
+              }}
+            >
+              &lt;Input placeholder='Horse name' />
+            &lt;/Form.Item>
+          &lt;/Col>
+          &lt;Col
+            sm={8}
+            span={24}
+          >
+            &lt;FieldDropdown
+              field={categoryField}
+              formInstance={form}
+            />
+          &lt;/Col>
+          &lt;Col
+            sm={8}
+            span={24}
+          >
+            &lt;FieldDropdown
+              field={listingField}
+              formInstance={form}
+            />
+          &lt;/Col>
+          &lt;Col
+            sm={8}
+            span={24}
+          >
+            &lt;Form.Item
+              name='horseName'
+              label='Horse display name'
+            >
+              &lt;Input placeholder='Horse display name' />
+            &lt;/Form.Item>
+          &lt;/Col>
+          &lt;Col
+            sm={8}
+            span={24}
+          >
+            &lt;Form.Item
+              name='sire'
+              label='Sire'
+            >
+              &lt;Input placeholder='Name of sire' />
+            &lt;/Form.Item>
+          &lt;/Col>
+          &lt;Col
+            sm={8}
+            span={24}
+          >
+            &lt;Form.Item
+              name='dam'
+              label='Dam'
+            >
+              &lt;Input placeholder='Name of dame' />
+            &lt;/Form.Item>
+          &lt;/Col>
+          &lt;Col
+            sm={8}
+            span={24}
+          >
+            &lt;FieldDropdown
+              field={countryOfBirthField}
+              formInstance={form}
+            />
+          &lt;/Col>
+          &lt;Col
+            sm={8}
+            span={24}
+          >
+            &lt;FieldDropdown
+              field={foaledDateField}
+              formInstance={form}
+            />
+          &lt;/Col>
+          &lt;Col
+            sm={8}
+            span={24}
+          >
+            &lt;FieldDropdown
+              field={sexField}
+              formInstance={form}
+            />
+          &lt;/Col>
+          &lt;Col
+            sm={8}
+            span={24}
+          >
+            &lt;FieldDropdown
+              field={colourField}
+              formInstance={form}
+            />
+          &lt;/Col>
+          &lt;Col
+            sm={8}
+            span={24}
+          >
+            &lt;FieldDropdown
+              field={bonusField}
+              formInstance={form}
+            />
+          &lt;/Col>
+          &lt;Col
+            sm={8}
+            span={24}
+          >&lt;/Col>
+          &lt;Col
+            sm={8}
+            span={0}
+          >
+            &lt;Form.Item
+              name='price'
+              label='Price'
+            >
+              &lt;Input
+                placeholder='Input price'
+                prefix={'$'}
+              />
+            &lt;/Form.Item>
+          &lt;/Col>
+          &lt;Col
+            sm={16}
+            span={24}
+          >
+            &lt;Form.Item
+              name='condition'
+              label='Conditions'
+            >
+              &lt;Input placeholder='Conditions' />
+            &lt;/Form.Item>
+          &lt;/Col>
+          &lt;Col
+            className='font-medium pb-2'
+            sm={24}
+          >
+            &lt;span>Current location&lt;/span>
+          &lt;/Col>
+          &lt;Col
+            sm={8}
+            span={24}
+          >
+            &lt;FieldDropdown
+              field={countryLocationField}
+              formInstance={form}
+            />
+          &lt;/Col>
+          &lt;Col
+            sm={8}
+            span={24}
+          >
+            &lt;FieldDropdown
+              field={stateField}
+              formInstance={form}
+            />
+          &lt;/Col>
+          &lt;Col
+            sm={8}
+            span={24}
+          >
+            &lt;Form.Item name='location'>
+              &lt;Input placeholder='Location' />
+            &lt;/Form.Item>
+          &lt;/Col>
+          &lt;Col
+            sm={8}
+            span={24}
+          >
+            &lt;FieldDropdown
+              field={xRayedField}
+              formInstance={form}
+            />
+          &lt;/Col>
+          &lt;Col
+            sm={8}
+            span={24}
+          >
+            &lt;FieldDropdown
+              field={scopedField}
+              formInstance={form}
+            />
+          &lt;/Col>
+          {currentCategory === HorseCategories.Broodmare &amp;&amp; (
+            &lt;>
+              &lt;Col
+                sm={8}
+                span={24}
+              >
+                &lt;FieldDropdown
+                  field={breedingCertField}
+                  formInstance={form}
+                />
+              &lt;/Col>
+              &lt;Col
+                sm={8}
+                span={24}
+              >
+                &lt;FieldDropdown
+                  field={inFoalField}
+                  formInstance={form}
+                />
+              &lt;/Col>
+              {currentInFoal &amp;&amp; (
+                &lt;Col
+                  sm={8}
+                  span={24}
+                >
+                  &lt;Form.Item
+                    name='inFoalTo'
+                    label='In foal to'
+                    rules={[
+                      {
+                        required: true,
+                      },
+                    ]}
+                    tooltip={{
+                      title: 'Required field',
+                      icon: (
+                        &lt;span>
+                          &lt;span className='text-red-500'>*&lt;/span>
+                        &lt;/span>
+                      ),
+                    }}
+                  >
+                    &lt;Input placeholder='In foal to' />
+                  &lt;/Form.Item>
+                &lt;/Col>
+              )}
+              &lt;Col
+                sm={8}
+                span={24}
+              >
+                &lt;FieldDropdown
+                  field={foalAtFootField}
+                  formInstance={form}
+                />
+              &lt;/Col>
+              {currentFoalAtFoot &amp;&amp; (
+                &lt;Col
+                  sm={8}
+                  span={24}
+                >
+                  &lt;Form.Item
+                    name='foalAtFootBy'
+                    label='Foal at foot by'
+                    rules={[
+                      {
+                        required: true,
+                      },
+                    ]}
+                    tooltip={{
+                      title: 'Required field',
+                      icon: (
+                        &lt;span>
+                          &lt;span className='text-red-500'>*&lt;/span>
+                        &lt;/span>
+                      ),
+                    }}
+                  >
+                    &lt;Input placeholder='Foal at foot by' />
+                  &lt;/Form.Item>
+                &lt;/Col>
+              )}
+              &lt;Col
+                sm={8}
+                span={24}
+              >
+                &lt;Form.Item
+                  name='foalSireBy'
+                  label='Foal sired by'
+                >
+                  &lt;Input placeholder='Trainer' />
+                &lt;/Form.Item>
+              &lt;/Col>
+            &lt;/>
+          )}
+          {currentType === ListingTypes.ForSyndication &amp;&amp; (
+            &lt;>
+              &lt;Col
+                sm={8}
+                span={24}
+              >
+                &lt;Form.Item
+                  name='afslNumber'
+                  label='AFSL/AR number'
+                  rules={[
+                    {
+                      required: true,
+                    },
+                  ]}
+                  tooltip={{
+                    title: 'Required field',
+                    icon: (
+                      &lt;span>
+                        &lt;span className='text-red-500'>*&lt;/span>
+                      &lt;/span>
+                    ),
+                  }}
+                  initialValue={user?.afslNumber}
+                >
+                  &lt;Input placeholder='AFSL/AR number' />
+                &lt;/Form.Item>
+              &lt;/Col>
+              &lt;Col
+                sm={8}
+                span={24}
+              >
+                &lt;FieldDropdown
+                  field={pdsExpiryDateField}
+                  formInstance={form}
+                />
+              &lt;/Col>
+            &lt;/>
+          )}
+          {((currentCategory === HorseCategories.Unraced ||
+          currentCategory === HorseCategories.Raced) ||
+          currentType === ListingTypes.ForSyndication) &amp;&amp; (
+            &lt;Col
+              sm={8}
+              span={24}
+            >
+              &lt;Form.Item
+                name='trainerName'
+                label='Trainer'
+              >
+                &lt;Input placeholder='Trainer' />
+              &lt;/Form.Item>
+            &lt;/Col>
+          )}
+          {currentType === ListingTypes.ForSyndication &amp;&amp; (
+            &lt;Col
+              sm={12}
+              span={24}
+            >
+              &lt;Form.Item
+                name='pdsApprovalLetterMediaId'
+                label='PDS approval letter'
+              >
+                &lt;UploadFile
+                  uploadText='Upload letter'
+                  direction='rtl'
+                  multiple={false}
+                  maxCount={1}
+                  layout='vertical'
+                  showUploadList={{
+                    showRemoveIcon: false
+                  }}
+                  onChange={onPdsFileChange}
+                  fileList={pdsFileList}
+                />
+              &lt;/Form.Item>
+            &lt;/Col>
+          )}
+          {currentCategory !== HorseCategories.Unraced &amp;&amp; (
+            &lt;Col
+              sm={12}
+              span={24}
+            >
+              &lt;Form.Item
+                name='raceRecordMediaId'
+                label='Race record'
+              >
+                &lt;UploadFile
+                  uploadText='Upload record'
+                  direction='rtl'
+                  multiple={false}
+                  maxCount={1}
+                  layout='vertical'
+                  showUploadList={{
+                    showRemoveIcon: false
+                  }}
+                  onChange={onRaceRecordFileChange}
+                  fileList={raceRecordFileList}
+                />
+              &lt;/Form.Item>
+            &lt;/Col>
+          )}
+          &lt;Col
+            sm={12}
+            span={24}
+          >
+            &lt;Form.Item
+              name='emailEnquiry'
+              label='Email for sale enquiries'
+              rules={[
+                {
+                  required: true,
+                  message: Messages.RequiredField,
+                },
+              ]}
+              tooltip={{
+                title: 'Required field',
+                icon: (
+                  &lt;span>
+                    &lt;span className='text-red-500'>*&lt;/span>
+                  &lt;/span>
+                ),
+              }}
+            >
+              &lt;Input placeholder='Email for sale enquiries' />
+            &lt;/Form.Item>
+          &lt;/Col>
+          &lt;Col
+            sm={24}
+            span={24}
+          >
+            &lt;Form.Item
+              name='headline'
+              label='Headline'
+            >
+              &lt;Input placeholder='Input headline' />
+            &lt;/Form.Item>
+          &lt;/Col>
+          &lt;Col
+            sm={24}
+            span={24}
+          >
+            &lt;Form.Item
+              label='Description'
+            >
+              &lt;Editor
+                initialValue={horse?.description}
+                onInit={(event, editor) => editorRef.current = editor}
+              />
+            &lt;/Form.Item>
+          &lt;/Col>
+        &lt;/Row>
+        &lt;Row>
+          &lt;Form.Item
+            name='avatarMediaId'
+            label='Attachments'
+          >
+            &lt;Radio.Group defaultValue={first(mediaFileList?.filter(file => file.type.includes('image')))?.uid}>
+              &lt;UploadFile
+                listType='picture-card'
+                multiple
+                fileList={mediaFileList}
+                onPreview={handleMediaPreview}
+                onChange={onMediaFileChange}
+                itemRender={(originNode, file) => {
+                  const isImage = file.type.includes('image')
+                  const isVideo = file.type.includes('video')
+                  const alteredNode = (
+                    &lt;>
+                      &lt;div className='h-[104px] relative'>
+                        {isImage &amp;&amp; (
+                          &lt;Tooltip title='Set horse avatar'>
+                            &lt;Radio
+                              className='absolute top-1 left-2 z-50'
+                              value={file.uid}
+                            />
+                          &lt;/Tooltip>
+                        )}
+                        {(isVideo &amp;&amp; file.status === 'done' &amp;&amp; file.thumbUrl) &amp;&amp; (
+                          &lt;>
+                            &lt;div
+                              className={`absolute top-0 left-0 right-0 bottom-0 w-full h-full
+                              flex justify-center items-center z-[5] text-white text-xl`}
+                            >
+                              &lt;PlayCircleFilled className='rounded-full bg-black bg-opacity-50' />
+                            &lt;/div>
+                          &lt;/>
+                        )}
+                        {originNode}
+                      &lt;/div>
+                      &lt;p
+                        className='mt-1 truncate w-full text-xs'
+                        title={file.fileName ?? file.name}
+                      >
+                        {file.fileName ?? file.name}
+                      &lt;/p>
+                    &lt;/>
+                  )
+
+                  return alteredNode
+                }}
+              />
+            &lt;/Radio.Group>
+          &lt;/Form.Item>
+          &lt;CustomLightbox
+            open={lightboxController.toggler}
+            onCancel={handleCancel}
+            data={previews}
+            playing={playing}
+            sliderRef={sliderRef}
+            currentSlide={lightboxController.sourceIndex}
+            setCurrentSlide={current => {
+              setPlaying(false)
+              setLightboxController({
+                sourceIndex: current,
+                toggler: true,
+              })
+            }}
+            closeLightbox={event => {
+              if (event.target === event.currentTarget) {
+                setLightboxController(values => ({
+                  ...values,
+                  toggler: false,
+                }))
+              }
+
+              setPlaying(false)
+            }}
+            onPlay={() => setPlaying(true)}
+            setLightboxController={setLightboxController}
+            handle={mediaHandle}
+          />
+        &lt;/Row>
+        &lt;Row>
+          &lt;Form.Item
+            name='pedigreeMediaId'
+            label='Pedigree'
+          >
+            &lt;UploadFile
+              listType='picture-card'
+              multiple={false}
+              maxCount={1}
+              fileList={pedigreeFileList}
+              onPreview={handlePedigreePreview}
+              onChange={onPedigreeFileChange}
+              itemRender={(originNode, file, currFileList) => {
+                const alteredNode = (
+                  &lt;div className='h-[104px] relative'>
+                    {originNode}
+                    &lt;p
+                      className='mt-1 truncate w-full text-xs'
+                      title={file.fileName ?? file.name}
+                    >
+                      {file.fileName ?? file.name}
+                    &lt;/p>
+                  &lt;/div>
+                )
+                return alteredNode
+              }}
+            />
+          &lt;/Form.Item>
+          &lt;CustomLightbox
+            open={pedigreeController.toggler}
+            onCancel={handlePedigreeCancel}
+            data={pedigreePreview}
+            playing={playing}
+            sliderRef={sliderRef}
+            currentSlide={pedigreeController.sourceIndex}
+            setCurrentSlide={current => {
+              setPedigreeController({
+                sourceIndex: current,
+                toggler: true,
+              })
+            }}
+            closeLightbox={event => {
+              if (event.target === event.currentTarget) {
+                setPedigreeController(values => ({
+                  ...values,
+                  toggler: false,
+                }))
+              }
+
+              setPlaying(false)
+            }}
+            onPlay={null}
+            setLightboxController={setPedigreeController}
+            handle={pedigreeHandle}
+          />
+        &lt;/Row>
+        &lt;Form.Item name='upgrade'>
+          &lt;Checkbox disabled>Upgrade to Priority Placement Listing for $99 for one month.&lt;/Checkbox>
+        &lt;/Form.Item>
+        &lt;Row justify='center'>
+          &lt;Space
+            key='space'
+            size={screens.xs ? 'small' : 'large'}
+            // direction={screens.xs ? 'vertical' : 'horizontal'}
+          >
+            &lt;Form.Item noStyle>
+              &lt;Button
+                className='sm:w-36'
+                key='cancel'
+                onClick={() => setVisible(false)}
+              >
+                Cancel
+              &lt;/Button>
+            &lt;/Form.Item>
+            {(
+              horse?.status === HorseStatusNumerics.Pending ||
+              horse?.status === HorseStatusNumerics.Archived ||
+              horse?.status === HorseStatusNumerics.Sold ||
+              horse?.status === HorseStatusNumerics.Rejected
+            ) &amp;&amp; (
+              &lt;Form.Item name='withdraw' noStyle>
+                &lt;Button
+                  className='sm:w-36'
+                  key='withdraw'
+                  type='default'
+                  onClick={onWithdraw}
+                >
+                  Withdraw
+                &lt;/Button>
+              &lt;/Form.Item>
+            )}
+            {!(horse?.status === HorseStatusNumerics.Rejected) &amp;&amp; (
+              &lt;Form.Item name='save' noStyle>
+                &lt;Button
+                  className='sm:w-36'
+                  key='save'
+                  type='primary'
+                  htmlType='submit'
+                >
+                  Save
+                &lt;/Button>
+              &lt;/Form.Item>
+            )}
+            {!(
+              horse?.status === HorseStatusNumerics.Pending ||
+              horse?.status === HorseStatusNumerics.Archived ||
+              horse?.status === HorseStatusNumerics.Sold
+            ) &amp;&amp; (
+              &lt;Form.Item name='submit' noStyle>
+                &lt;Button
+                  className='w-36'
+                  key='submit'
+                  type='primary'
+                  onClick={onSubmit}
+                >
+                  Submit
+                &lt;/Button>
+              &lt;/Form.Item>
+            )}
+          &lt;/Space>
+        &lt;/Row>
+      &lt;/Form>
+    &lt;/HorseEditFormWrapper>
+  )
+}
+
+const HorseEditFormWrapper = styled.div`
+  > .ant-form {
+    &amp;.ant-form-vertical {
+      .ant-form-item {
+        .ant-form-item-control {
+          .ant-form-item-control-input {
+            .ant-form-item-control-input-content {
+              .ant-btn {
+                &amp;:not(.ant-btn-link, .ant-btn-text, .ant-btn-dangerous) {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
+export default HorseEditForm
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+
+</body>
+</html>

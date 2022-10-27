@@ -1,0 +1,774 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RC Documentation components/FilterBlock/index.tsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="styles/style.css">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+             
+                <a class="image" href="index.html">
+                    <img src="public/assets/images/logos/rc-logo-primary.svg" alt="logo">
+                </a>
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Development Documentation</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://gitlab.fruitful.io/prism/prism-buybloodstock-next"
+                        >
+                            Repository
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Interfaces</h3><ul><li><a href="ActionMenuProps.html">ActionMenuProps</a></li><li><a href="AnchorInterface.html">AnchorInterface</a></li><li><a href="CustomizedUploadProps.html">CustomizedUploadProps</a></li><li><a href="EllipsisProps.html">EllipsisProps</a></li><li><a href="EnquiryDetailProps.html">EnquiryDetailProps</a></li><li><a href="HomeBannerCarouselProps.html">HomeBannerCarouselProps</a></li><li><a href="HorseEditFormProps.html">HorseEditFormProps</a></li><li><a href="ItemWrapperStyledProps.html">ItemWrapperStyledProps</a></li><li><a href="ListingType.html">ListingType</a></li><li><a href="ModifiedResultProps.html">ModifiedResultProps</a></li><li><a href="MustReadPanelProps.html">MustReadPanelProps</a></li><li><a href="MustReadPanelSkeletonProps.html">MustReadPanelSkeletonProps</a></li><li><a href="NewsDetailProps.html">NewsDetailProps</a></li><li><a href="NewsDetailWrapperStyleProps.html">NewsDetailWrapperStyleProps</a></li><li><a href="NewsItemProps.html">NewsItemProps</a></li><li><a href="NewsPreviewProps.html">NewsPreviewProps</a></li><li><a href="NewsPreviewStyledProps.html">NewsPreviewStyledProps</a></li><li><a href="NoResultProps.html">NoResultProps</a></li><li><a href="ShareButtonProps.html">ShareButtonProps</a></li><li><a href="ShareMenuProps.html">ShareMenuProps</a></li><li><a href="ShareOnSocialsProps.html">ShareOnSocialsProps</a></li><li><a href="UploadImageProps.html">UploadImageProps</a></li></ul><h3>Components</h3><ul><li><a href="ActionMenu.html">ActionMenu</a></li><li><a href="DrawerHandle.html">DrawerHandle</a></li><li><a href="EnquiryDetail.html">EnquiryDetail</a></li><li><a href="FilterBlock.html">FilterBlock</a></li><li><a href="HomeBannerCarousel.html">HomeBannerCarousel</a></li><li><a href="HorseEditForm.html">HorseEditForm</a></li><li><a href="MustReadPanel.html">MustReadPanel</a></li><li><a href="MustReadPanelSkeleton.html">MustReadPanelSkeleton</a></li><li><a href="NewsDetail.html">NewsDetail</a></li><li><a href="NewsFilter.html">NewsFilter</a></li><li><a href="NewsItem.html">NewsItem</a></li><li><a href="NoResult.html">NoResult</a></li><li><a href="ShareButton.html">ShareButton</a></li><li><a href="ShareMenu.html">ShareMenu</a></li><li><a href="ShareOnSocials.html">ShareOnSocials</a></li><li><a href="SkeletonCard.html">SkeletonCard</a></li><li><a href="TileAdCarousel.html">TileAdCarousel</a></li><li><a href="TileAdItem.html">TileAdItem</a></li><li><a href="UploadFile.html">UploadFile</a></li><li><a href="UploadImage.html">UploadImage</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Empty">Empty</a></li><li><a href="global.html#FieldDropdown">FieldDropdown</a></li><li><a href="global.html#getHorseLink">getHorseLink</a></li><li><a href="global.html#handleCancel">handleCancel</a></li><li><a href="global.html#HOME_BANNERS">HOME_BANNERS</a></li><li><a href="global.html#HomeBannerItem">HomeBannerItem</a></li><li><a href="global.html#HomePage">HomePage</a></li><li><a href="global.html#HorseAges">HorseAges</a></li><li><a href="global.html#HorseDetailPanel">HorseDetailPanel</a></li><li><a href="global.html#InfoPanel">InfoPanel</a></li><li><a href="global.html#ItemWrapper">ItemWrapper</a></li><li><a href="global.html#ListingsTab">ListingsTab</a></li><li><a href="global.html#ProfileTab">ProfileTab</a></li><li><a href="global.html#sellUserHorse">sellUserHorse</a></li><li><a href="global.html#useAutoAnimate">useAutoAnimate</a></li><li><a href="global.html#useForceUpdate">useForceUpdate</a></li><li><a href="global.html#useLoading">useLoading</a></li><li><a href="global.html#ViewLayout">ViewLayout</a></li></ul></div><div class="category"><h2>@api</h2><h3>Global</h3><ul><li><a href="global.html#getHorseColours">getHorseColours</a></li><li><a href="global.html#getListingTypes">getListingTypes</a></li><li><a href="global.html#updateHorseDetail">updateHorseDetail</a></li><li><a href="global.html#useGetHorseColours">useGetHorseColours</a></li><li><a href="global.html#useGetListingTypes">useGetListingTypes</a></li></ul></div><div class="category"><h2>@components</h2><h3>Components</h3><ul><li><a href="CountryEditPanel.html">CountryEditPanel</a></li><li><a href="HorseEditFormModal.html">HorseEditFormModal</a></li><li><a href="InfoEditPanel.html">InfoEditPanel</a></li><li><a href="NewsPreview.html">NewsPreview</a></li></ul></div><div class="category"><h2>@containers</h2><h3>Components</h3><ul><li><a href="Layout.html">Layout</a></li></ul></div><div class="category"><h2>@ui</h2><h3>Components</h3><ul><li><a href="Button.html">Button</a></li><li><a href="Carousel.html">Carousel</a></li><li><a href="Checkbox.html">Checkbox</a></li><li><a href="DatePicker.html">DatePicker</a></li><li><a href="Drawer.html">Drawer</a></li><li><a href="Editor.html">Editor</a></li><li><a href="Ellipsis.html">Ellipsis</a></li><li><a href="Form.html">Form</a></li><li><a href="Input.html">Input</a></li><li><a href="Input.Group.html">Group</a></li><li><a href="Input.Password.html">Password</a></li><li><a href="Input.Search.html">Search</a></li><li><a href="Input.TextArea.html">TextArea</a></li><li><a href="Menu.html">Menu</a></li><li><a href="Modal.html">Modal</a></li><li><a href="Notification.html">Notification</a></li><li><a href="Progress.html">Progress</a></li><li><a href="Radio.html">Radio</a></li><li><a href="RangePicker.html">RangePicker</a></li><li><a href="Result.html">Result</a></li><li><a href="Segmented.html">Segmented</a></li><li><a href="Select.html">Select</a></li><li><a href="Spin.html">Spin</a></li><li><a href="Upload.html">Upload</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>components/FilterBlock/index.tsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { DeleteFilled, LoadingOutlined } from '@ant-design/icons'
+import {
+  useDeleteFilters,
+  useGetSavedFilters,
+  useSaveFilters
+} from '@api/queries'
+import { getSavedFiltersById } from '@api/services'
+import { StorageKeys } from '@api/storage'
+import { FieldDropdown, SignupLoginModal } from '@components'
+import { Messages } from '@constants'
+import { filterType } from '@constants/enum'
+import { AppContext, UserContext } from '@contexts'
+import styled from '@emotion/styled'
+import { useAutoAnimate } from '@formkit/auto-animate/react'
+import {
+  DirectoryRequest,
+  ErrorResponse,
+  Filters,
+  HorseRequest,
+  LocalStorageFilters,
+  NewsRequest,
+  SearchSelectField
+} from '@interfaces'
+import {
+  Button, DatePicker, Form, Input, Modal, notification, Select
+} from '@ui'
+import { Col, FormInstance, Grid, Row, Space, Spin } from 'antd'
+import dayjs, { Dayjs } from 'dayjs'
+import { find } from 'lodash'
+import { useRouter } from 'next/router'
+import React, {
+  Dispatch,
+  SetStateAction,
+  useContext,
+  useEffect,
+  useMemo,
+  useRef,
+  useState
+} from 'react'
+import { useLocalStorage } from 'react-use'
+
+const { useBreakpoint } = Grid
+
+interface FilterBlockProps {
+  form: FormInstance
+	searchFields: SearchSelectField[]
+	setCountryId?: Dispatch&lt;SetStateAction&lt;number>>
+	setFieldFilter?: Dispatch&lt;
+		SetStateAction&lt;{
+			field: SearchSelectField
+			value: string
+		}>
+	>
+	hasSaveFilter: boolean
+	onSearch?: (data: HorseRequest | NewsRequest | DirectoryRequest, showDrawer?: boolean) => void
+	contentType?: string
+	type?: number
+	byTopic?: number[]
+	setByTopic?: (id: number[]) => void,
+	myRef?: React.RefObject&lt;HTMLDivElement>
+}
+
+/**
+ * Filter blocks component, render filter blocks by passing search fields
+ * @component
+ * @returns {JSX.Element} &lt;FilterBlock {...props} />
+ */
+export const FilterBlock: React.FunctionComponent&lt;FilterBlockProps> = ({
+  form,
+	searchFields,
+	hasSaveFilter,
+	onSearch,
+	setFieldFilter,
+	contentType,
+	setCountryId,
+	type,
+	myRef
+}: FilterBlockProps): JSX.Element => {
+	const userContext = useContext(UserContext)
+	const screens = useBreakpoint()
+	const router = useRouter()
+  const blockRef = useRef&lt;HTMLDivElement>(null)
+	const [date, setDate] = useState&lt;Dayjs>()
+	const [signupLoginVisible, setSignupLoginVisible] = useState(false)
+	const [filtersSaveInputVisible, setFiltersSaveInputVisible] = useState(false)
+	const [filtersCollectionName, setFiltersCollectionName] = useState(
+		dayjs().format('DD-MM-YYYY')
+	)
+	const [filters, setFilters, removeFilters] =
+		useLocalStorage&lt;LocalStorageFilters>(
+			contentType === 'horse'
+      ? `${StorageKeys.HORSE_FILTERS}-${type}`
+      : `${StorageKeys.NEWS_FILTERS}-${type}`
+      ,
+			{
+				type: type,
+        title: undefined,
+				body: undefined,
+			}
+		)
+	const [searchTitleId, setSearchTitleId] = useState&lt;number>(
+		parseInt((router.query.searchId as string) || undefined)
+	)
+	const animated = useAutoAnimate(null) as React.Ref&lt;HTMLDivElement>
+	const countryId = Form.useWatch&lt;number>('countryId', form)
+  	const tagContext = useContext(AppContext)
+	const [savedSearchPage, setSavedSearchPage] = useState&lt;boolean>(router.query.searchId ? true : false)
+	const isLoggedIn = useMemo(() => {
+		if (userContext.contextLoaded) {
+			const user = userContext.currentUser
+			return !!user
+		}
+	}, [userContext.contextLoaded, userContext.currentUser])
+
+	const {
+		data: savedFiltersResp,
+		refetch: fetchSavedFilters,
+		isFetching: fetchingSavedFilters,
+	} = useGetSavedFilters(type, isLoggedIn)
+	const savedFilters = useMemo(
+		() => savedFiltersResp?.data?.responseData,
+		[savedFiltersResp]
+	)
+
+	const onFinish = (data: Filters) => {
+		let prices: string[] = []
+
+		if (data?.price) {
+			prices = data.price.split('-')
+			delete data.price
+			data.minPrice = prices[0]
+			data.maxPrice = prices[1]
+		}
+
+		setFilters(values => ({
+			...values,
+      title: form.getFieldValue('searchTitle') as number,
+			body: data
+		}))
+		onSearch(data, savedSearchPage)
+	}
+
+	useEffect(() => {
+		!!setCountryId &amp;&amp; setCountryId(countryId)
+		if (countryId === undefined) {
+			form.resetFields(['stateIds'])
+		}
+	}, [countryId, setCountryId, form])
+
+	useEffect(() => {
+		if (filters?.body &amp;&amp; filters?.type === type) {
+			onSearch(filters.body, true)
+		}
+	// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [filters, type])
+
+	useEffect(() => {
+		if (filters?.body &amp;&amp; !savedSearchPage) {
+			let localPrice: string = undefined
+      let localDate: Dayjs = undefined
+      if (filters?.body?.minPrice || filters?.body?.maxPrice) {
+        localPrice =
+          (filters?.body.minPrice || '0') +
+          (!!filters?.body?.maxPrice &amp;&amp; '-') +
+          (filters?.body.maxPrice || '')
+      }
+
+      if (filters?.body?.date) {
+        localDate = dayjs(filters?.body?.date)
+        setDate(localDate)
+      }
+
+      searchFields?.map(field => {
+        if (field?.labelInValue &amp;&amp; !!field?.fetch) {
+          field?.fetch()
+        }
+      })
+
+      filters?.title &amp;&amp; fetchSavedFilters()
+
+      savedFilters ? form.setFieldsValue({
+        ...filters?.body,
+        searchTitle: find(savedFilters, { id: filters?.title}) ? filters?.title : undefined,
+        price: localPrice,
+        date: localDate,
+      }) : form.setFieldsValue({
+        ...filters.body,
+        price: localPrice,
+        date: localDate,
+      })
+		}
+	// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [filters, form, type, fetchSavedFilters, savedFilters, contentType])
+
+	const onClear = () => {
+		removeFilters()
+    tagContext.setTag(undefined)
+		form.resetFields()
+		onFinish(undefined)
+	}
+
+	const onSaveFiltersClick = () => {
+		setFiltersCollectionName(dayjs().format('DD-MM-YYYY'))
+		setFiltersSaveInputVisible(!filtersSaveInputVisible)
+	}
+
+	const onSaveFiltersCancel = () => {
+		setFiltersSaveInputVisible(false)
+	}
+
+	const { mutateAsync: saveFilters } = useSaveFilters({
+		onSuccess: async resp => {
+			if (resp.data.responseData) {
+				notification.success({
+          message: Messages.SaveSearchSuccess
+        })
+				setFiltersSaveInputVisible(false)
+				form.resetFields()
+				await fetchSavedFilters()
+				form.setFieldsValue({
+					searchTitle: resp?.data?.responseData?.id,
+					...resp?.data?.responseData?.body,
+          date: dayjs(resp?.data?.responseData?.body?.date?.[0] as string | number | dayjs.Dayjs | Date)
+				})
+			} else if (resp.data.error) {
+				notification.error({
+          message: resp.data.error.message
+        })
+			}
+		},
+		onError: (error: ErrorResponse) => {
+			notification.error({
+				message: error.message,
+			})
+		},
+	})
+
+	const { mutateAsync: deleteFilters } = useDeleteFilters({
+		onSuccess: resp => {
+      const searchResp = resp?.data?.responseData
+      const error = resp?.data?.error
+
+			if (searchResp) {
+				notification.success({
+          message: Messages.DeleteSaveSearchSuccess
+        })
+				setSearchTitleId(undefined)
+				form.resetFields()
+				onSearch(form.getFieldsValue() as HorseRequest | NewsRequest | DirectoryRequest)
+				fetchSavedFilters()
+				removeFilters()
+			} else if (error) {
+				console.error(error)
+				notification.error({
+          message: error.message
+        })
+			}
+		},
+		onError: error => {
+			console.error(error)
+			notification.error({
+        message: error.message
+      })
+		},
+	})
+
+	const onSaveFilters = async (
+		event: React.MouseEvent&lt;HTMLElement, MouseEvent>
+	) => {
+		event.stopPropagation()
+
+		let prices: string[] = []
+
+		const filtersToServer = form.getFieldsValue() as Filters
+
+		if (filtersToServer.price) {
+			prices = filtersToServer.price.split('-')
+			filtersToServer.minPrice = prices[0]
+			filtersToServer.maxPrice = prices[1]
+		}
+
+		if (isLoggedIn) {
+			delete filtersToServer.searchTitle
+			await saveFilters({
+				body: {
+          ...filtersToServer,
+          date: filtersToServer?.date ? [dayjs(filtersToServer?.date)?.valueOf()] : undefined
+        },
+				type: type,
+				name: filtersCollectionName,
+			})
+
+			onFinish(filtersToServer)
+		} else {
+			setSignupLoginVisible(true)
+      notification.warn({
+        message: Messages.LoginRequired
+      })
+		}
+	}
+
+	const onDeleteFilters = (id: number) => {
+		Modal.confirm({
+			type: 'warning',
+			title: 'Confirm',
+			content: Messages.ConfirmDeleteSaveSearch,
+			okText: 'Yes',
+			cancelText: 'No',
+			onOk: () => {
+				if (savedFilters === undefined) {
+					form.resetFields()
+				}
+				return deleteFilters(id)
+			},
+		})
+	}
+
+	useEffect(() => {
+		const searchId = router.query.searchId as string
+		if (searchId) {
+			onSavedFiltersSelectChange(parseInt(searchId))
+			if(myRef?.current){
+				window.scrollTo(0, myRef.current.offsetTop - 180);
+			}
+		}
+	// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [router.query.searchId])
+
+	const onSavedFiltersSelectChange = async (id: number) => {
+		form.resetFields()
+		const savedResp = await getSavedFiltersById(id)
+		const saved = savedResp?.data?.responseData?.body
+		searchFields?.map(field => {
+			if (field?.labelInValue &amp;&amp; !!field?.fetch) {
+				field?.fetch()
+			}
+		})
+
+		if (saved) {
+			let savedPrice: string = undefined
+      let savedDate: Dayjs = undefined
+
+			if (saved?.minPrice || saved?.maxPrice) {
+				savedPrice =
+					(saved.minPrice || '0') +
+					(!!saved?.maxPrice &amp;&amp; '-') +
+					(saved.maxPrice || '')
+			}
+
+      if (saved?.date) {
+        savedDate = dayjs(saved.date[0] as string | number | Date | dayjs.Dayjs)
+      }
+
+			setFilters(values => ({
+				...values,
+        title: id,
+				body: {
+          ...saved,
+          price: savedPrice,
+          date: savedDate
+        },
+			}))
+
+			form.setFieldsValue({
+				...saved,
+				searchTitle: id,
+				price: savedPrice,
+        date: savedDate
+			})
+
+			onFinish({
+        ...saved,
+				price: savedPrice,
+        date: savedDate
+      })
+	  setSavedSearchPage(false)
+		}
+	}
+
+  useEffect(
+    () => {
+      const tag = tagContext.tag
+
+      if (tag?.page === router.pathname) {
+        form.resetFields()
+        searchFields?.find(field => field.name === filterType[tag.filterType]).fetch()
+        form.setFieldsValue({
+          [filterType[tag.filterType]]: [tag.id]
+        })
+        blockRef.current.scrollIntoView()
+        onFinish({
+          [filterType[tag.filterType]]: [tag.id]
+        })
+      }
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [tagContext, form]
+  )
+
+	return (
+		&lt;FilterBlockWrapper ref={blockRef}>
+			&lt;Form
+				className='mt-4'
+				form={form}
+        size='large'
+				onFinish={onFinish}
+			>
+				&lt;Row
+					gutter={16}
+					ref={screens.xs ? animated : undefined}
+				>
+					&lt;Col
+						xl={3}
+						lg={4}
+						sm={6}
+						span={24}
+					>
+						&lt;Form.Item name='searchTitle'>
+							&lt;Select
+								size='large'
+								placeholder='Saved Searches'
+								optionLabelProp='label'
+								getPopupContainer={(elem: HTMLElement) => elem}
+								dropdownMatchSelectWidth={false}
+								onFocus={() => fetchSavedFilters()}
+								onSelect={(value: number) => {
+									setSearchTitleId(value)
+									onSavedFiltersSelectChange(value)
+								}}
+								disabled={!isLoggedIn}
+								value={searchTitleId}
+								loading={fetchingSavedFilters}
+							>
+								{savedFilters ? (
+									savedFilters?.map(item => {
+										return (
+											&lt;Select.Option
+												value={item?.id}
+												label={item?.name}
+												key={item?.id}
+											>
+												&lt;div className='flex flex-row justify-between'>
+													&lt;span className='truncate'>{item?.name}&lt;/span>
+													&lt;div
+														onClick={event => {
+															event.stopPropagation()
+															onDeleteFilters(item?.id)
+														}}
+													>
+														&lt;a>
+															&lt;DeleteFilled />
+														&lt;/a>
+													&lt;/div>
+												&lt;/div>
+											&lt;/Select.Option>
+										)
+									})
+								) : (
+									&lt;Select.Option>
+									  &lt;div className='flex justify-center items-center'>
+  										&lt;Spin
+  											size='large'
+  											indicator={&lt;LoadingOutlined />}
+  										/>
+  									&lt;/div>
+									&lt;/Select.Option>
+								)}
+							&lt;/Select>
+						&lt;/Form.Item>
+					&lt;/Col>
+					{searchFields.map((field, index) => (
+						&lt;FieldDropdown
+							key={field.name}
+              filter
+							field={field}
+							formInstance={form}
+							index={index}
+							setFilters={setFilters}
+							removeFilters={removeFilters}
+							setFieldFilter={setFieldFilter}
+						/>
+					))}
+					{contentType === 'news' &amp;&amp; (
+						&lt;Col
+							xl={3}
+							lg={4}
+							sm={6}
+							span={24}
+							order={searchFields.length + 1}
+						>
+							&lt;Form.Item name='date'>
+								&lt;DatePicker
+                  className='w-full'
+									picker='month'
+									placeholder='Select Month'
+									format='YYYY MMMM'
+									size='large'
+									value={date}
+									onChange={value => setDate(value)}
+									allowClear={true}
+                  inputReadOnly
+                  getPopupContainer={trigger => trigger}
+								/>
+							&lt;/Form.Item>
+						&lt;/Col>
+					)}
+          {!(router.pathname.includes('search')) &amp;&amp; (
+            &lt;Col
+              xl={6}
+              lg={8}
+              sm={12}
+              span={24}
+              order={screens.xs ? 1 : searchFields.length + 1}
+            >
+              &lt;Form.Item name={contentType === 'news' ? 'keyWord' : 'query'}>
+                &lt;Input
+                  placeholder='Search keyword'
+                  size='large'
+                />
+              &lt;/Form.Item>
+            &lt;/Col>
+          )}
+					&lt;Col
+						xl={6}
+						lg={8}
+						sm={12}
+						span={24}
+						order={screens.xs ? undefined : searchFields.length + 2}
+					>
+						&lt;Form.Item>
+							&lt;Row>
+								&lt;Space size={'large'}>
+									&lt;Button
+										type='primary'
+										size='large'
+										htmlType='submit'
+									>
+										Search
+									&lt;/Button>
+									&lt;a
+										className='underline'
+										onClick={onClear}
+									>
+										Clear all
+									&lt;/a>
+									&lt;a
+										className={`underline ${
+											hasSaveFilter &amp;&amp; screens.xs ? 'block' : 'hidden'
+										}`}
+										onClick={onSaveFiltersClick}
+									>
+										Save filter
+									&lt;/a>
+								&lt;/Space>
+							&lt;/Row>
+						&lt;/Form.Item>
+					&lt;/Col>
+					&lt;Col
+						sm={24}
+						span={0}
+						order={screens.xs ? undefined : searchFields.length + 3}
+					>
+						&lt;Form.Item
+							className={`underline ${hasSaveFilter ? 'block' : 'hidden'}`}
+						>
+							&lt;a onClick={onSaveFiltersClick}>Save filter&lt;/a>
+						&lt;/Form.Item>
+					&lt;/Col>
+					{filtersSaveInputVisible &amp;&amp; (
+						&lt;Col
+							span={24}
+							order={screens.xs ? 0 : searchFields.length + 4}
+						>
+							&lt;Space className='flex justify-start items-start'>
+								&lt;Form.Item>
+									&lt;Input
+										size='large'
+										placeholder='Input Name'
+										value={filtersCollectionName}
+										onChange={event =>
+											setFiltersCollectionName(event.currentTarget.value)
+										}
+									/>
+								&lt;/Form.Item>
+								&lt;Form.Item>
+									&lt;Button
+										size='large'
+										type='primary'
+										htmlType='button'
+										disabled={
+											filtersCollectionName === null ||
+											filtersCollectionName === undefined ||
+											filtersCollectionName.length === 0 ||
+											!filtersCollectionName.replace(/\s/g, '').length
+										}
+										onClick={event => onSaveFilters(event)}
+									>
+										Save
+									&lt;/Button>
+								&lt;/Form.Item>
+								&lt;Form.Item>
+									&lt;Button
+										size='large'
+										type='default'
+										onClick={onSaveFiltersCancel}
+									>
+										Cancel
+									&lt;/Button>
+								&lt;/Form.Item>
+							&lt;/Space>
+						&lt;/Col>
+					)}
+				&lt;/Row>
+			&lt;/Form>
+			&lt;SignupLoginModal
+				open={signupLoginVisible}
+				setVisible={setSignupLoginVisible}
+			/>
+		&lt;/FilterBlockWrapper>
+	)
+}
+
+const FilterBlockWrapper = styled.div`
+	.ant-select {
+		> .ant-select-selector {
+			.ant-select-selection-overflow {
+				flex-wrap: nowrap;
+				overflow: hidden;
+			}
+		}
+	}
+`
+
+export default FilterBlock
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo .image img {
+  height: 54px;
+}
+
+.logo .navbar-item {
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #203864;
+}
+
+.top-nav .menu .navigation .link {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #203864;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.sidebar a:hover, .sidebar a.active {
+  color: #3EC2CF;
+}
+
+.sidebar h3 {
+  color: #203864;
+  font-weight: 600;
+  font-size: 14px;
+}
