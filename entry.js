@@ -57,119 +57,122 @@ reactComponents['Editor'] = Component8;
 import Component9 from '../src/ui/ellipsis.tsx';
 reactComponents['Ellipsis'] = Component9;
 
-import Component10 from '../src/components/EnquiryDetail/index.tsx';
-reactComponents['EnquiryDetail'] = Component10;
+import Component10 from '../src/ui/empty.tsx';
+reactComponents['Empty'] = Component10;
 
-import Component11 from '../src/components/FilterBlock/index.tsx';
-reactComponents['FilterBlock'] = Component11;
+import Component11 from '../src/components/EnquiryDetail/index.tsx';
+reactComponents['EnquiryDetail'] = Component11;
 
-import Component12 from '../src/ui/form.tsx';
-reactComponents['Form'] = Component12;
+import Component12 from '../src/components/FilterBlock/index.tsx';
+reactComponents['FilterBlock'] = Component12;
 
-import Component13 from '../src/components/HomeBannerCarousel/HomeBannerCarousel.tsx';
-reactComponents['HomeBannerCarousel'] = Component13;
+import Component13 from '../src/ui/form.tsx';
+reactComponents['Form'] = Component13;
 
-import Component14 from '../src/components/HorseEditForm/EditForm.tsx';
-reactComponents['HorseEditForm'] = Component14;
+import Component14 from '../src/components/HomeBannerCarousel/HomeBannerCarousel.tsx';
+reactComponents['HomeBannerCarousel'] = Component14;
 
-import Component15 from '../src/components/HorseEditForm/EditFormModal.tsx';
-reactComponents['HorseEditFormModal'] = Component15;
+import Component15 from '../src/components/HorseEditForm/EditForm.tsx';
+reactComponents['HorseEditForm'] = Component15;
 
-import Component16 from '../src/components/InfoEditPanel/index.tsx';
-reactComponents['InfoEditPanel'] = Component16;
+import Component16 from '../src/components/HorseEditForm/EditFormModal.tsx';
+reactComponents['HorseEditFormModal'] = Component16;
 
-import Component17 from '../src/ui/input.tsx';
-reactComponents['Input'] = Component17;
+import Component17 from '../src/components/InfoEditPanel/index.tsx';
+reactComponents['InfoEditPanel'] = Component17;
 
 import Component18 from '../src/ui/input.tsx';
-reactComponents['Group'] = Component18;
+reactComponents['Input'] = Component18;
 
 import Component19 from '../src/ui/input.tsx';
-reactComponents['Password'] = Component19;
+reactComponents['Group'] = Component19;
 
 import Component20 from '../src/ui/input.tsx';
-reactComponents['Search'] = Component20;
+reactComponents['Password'] = Component20;
 
 import Component21 from '../src/ui/input.tsx';
-reactComponents['TextArea'] = Component21;
+reactComponents['Search'] = Component21;
 
-import Component22 from '../src/containers/layouts/layout.tsx';
-reactComponents['Layout'] = Component22;
+import Component22 from '../src/ui/input.tsx';
+reactComponents['TextArea'] = Component22;
 
-import Component23 from '../src/ui/menu.tsx';
-reactComponents['Menu'] = Component23;
+import Component23 from '../src/containers/layouts/layout.tsx';
+reactComponents['Layout'] = Component23;
 
-import Component24 from '../src/ui/modal.tsx';
-reactComponents['Modal'] = Component24;
+import Component24 from '../src/ui/menu.tsx';
+reactComponents['Menu'] = Component24;
 
-import Component25 from '../src/components/MustReadPanel/Panel.tsx';
-reactComponents['MustReadPanel'] = Component25;
+import Component25 from '../src/ui/modal.tsx';
+reactComponents['Modal'] = Component25;
 
-import Component26 from '../src/components/MustReadPanel/Skeleton.tsx';
-reactComponents['MustReadPanelSkeleton'] = Component26;
+import Component26 from '../src/components/MustReadPanel/Panel.tsx';
+reactComponents['MustReadPanel'] = Component26;
 
-import Component27 from '../src/containers/news/newsDetail.tsx';
-reactComponents['NewsDetail'] = Component27;
+import Component27 from '../src/components/MustReadPanel/Skeleton.tsx';
+reactComponents['MustReadPanelSkeleton'] = Component27;
 
-import Component28 from '../src/containers/news/newsFilter.tsx';
-reactComponents['NewsFilter'] = Component28;
+import Component28 from '../src/containers/news/newsDetail.tsx';
+reactComponents['NewsDetail'] = Component28;
 
-import Component29 from '../src/components/NewsItem/index.tsx';
-reactComponents['NewsItem'] = Component29;
+import Component29 from '../src/containers/news/newsFilter.tsx';
+reactComponents['NewsFilter'] = Component29;
 
-import Component30 from '../src/components/NewsPreview/index.tsx';
-reactComponents['NewsPreview'] = Component30;
+import Component30 from '../src/components/NewsItem/index.tsx';
+reactComponents['NewsItem'] = Component30;
 
-import Component31 from '../src/components/NoResult/index.tsx';
-reactComponents['NoResult'] = Component31;
+import Component31 from '../src/components/NewsPreview/index.tsx';
+reactComponents['NewsPreview'] = Component31;
 
-import Component32 from '../src/ui/notification.tsx';
-reactComponents['Notification'] = Component32;
+import Component32 from '../src/components/NoResult/index.tsx';
+reactComponents['NoResult'] = Component32;
 
-import Component33 from '../src/ui/progress.tsx';
-reactComponents['Progress'] = Component33;
+import Component33 from '../src/ui/notification.tsx';
+reactComponents['Notification'] = Component33;
 
-import Component34 from '../src/ui/radio.tsx';
-reactComponents['Radio'] = Component34;
+import Component34 from '../src/ui/progress.tsx';
+reactComponents['Progress'] = Component34;
 
-import Component35 from '../src/ui/rangepicker.tsx';
-reactComponents['RangePicker'] = Component35;
+import Component35 from '../src/ui/radio.tsx';
+reactComponents['Radio'] = Component35;
 
-import Component36 from '../src/ui/result.tsx';
-reactComponents['Result'] = Component36;
+import Component36 from '../src/ui/rangepicker.tsx';
+reactComponents['RangePicker'] = Component36;
 
-import Component37 from '../src/ui/segmented.tsx';
-reactComponents['Segmented'] = Component37;
+import Component37 from '../src/ui/result.tsx';
+reactComponents['Result'] = Component37;
 
-import Component38 from '../src/ui/select.tsx';
-reactComponents['Select'] = Component38;
+import Component38 from '../src/ui/segmented.tsx';
+reactComponents['Segmented'] = Component38;
 
-import Component39 from '../src/components/ShareButton/index.tsx';
-reactComponents['ShareButton'] = Component39;
+import Component39 from '../src/ui/select.tsx';
+reactComponents['Select'] = Component39;
 
-import Component40 from '../src/components/ShareMenu/index.tsx';
-reactComponents['ShareMenu'] = Component40;
+import Component40 from '../src/components/ShareButton/index.tsx';
+reactComponents['ShareButton'] = Component40;
 
-import Component41 from '../src/components/ShareOnSocials/index.tsx';
-reactComponents['ShareOnSocials'] = Component41;
+import Component41 from '../src/components/ShareMenu/index.tsx';
+reactComponents['ShareMenu'] = Component41;
 
-import Component42 from '../src/components/Skeleton/SkeletonCard.tsx';
-reactComponents['SkeletonCard'] = Component42;
+import Component42 from '../src/components/ShareOnSocials/index.tsx';
+reactComponents['ShareOnSocials'] = Component42;
 
-import Component43 from '../src/ui/spin.tsx';
-reactComponents['Spin'] = Component43;
+import Component43 from '../src/components/Skeleton/SkeletonCard.tsx';
+reactComponents['SkeletonCard'] = Component43;
 
-import Component44 from '../src/components/TileAd/TileAdCarousel.tsx';
-reactComponents['TileAdCarousel'] = Component44;
+import Component44 from '../src/ui/spin.tsx';
+reactComponents['Spin'] = Component44;
 
-import Component45 from '../src/components/TileAd/TileAdItem.tsx';
-reactComponents['TileAdItem'] = Component45;
+import Component45 from '../src/components/TileAd/TileAdCarousel.tsx';
+reactComponents['TileAdCarousel'] = Component45;
 
-import Component46 from '../src/ui/upload.tsx';
-reactComponents['Upload'] = Component46;
+import Component46 from '../src/components/TileAd/TileAdItem.tsx';
+reactComponents['TileAdItem'] = Component46;
 
-import Component47 from '../src/components/UploadFile/index.tsx';
-reactComponents['UploadFile'] = Component47;
+import Component47 from '../src/ui/upload.tsx';
+reactComponents['Upload'] = Component47;
 
-import Component48 from '../src/components/UploadImage/index.tsx';
-reactComponents['UploadImage'] = Component48;
+import Component48 from '../src/components/UploadFile/index.tsx';
+reactComponents['UploadFile'] = Component48;
+
+import Component49 from '../src/components/UploadImage/index.tsx';
+reactComponents['UploadImage'] = Component49;
